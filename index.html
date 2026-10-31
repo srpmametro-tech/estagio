@@ -509,6 +509,22 @@ async function checkin(tipo) {
   await act(null, 'checkin', { tipo, lat: g.lat, lng: g.lng, acc: g.acc, gps: gpsTxt }, tipo + ' registrada às ' + new Date().toTimeString().slice(0, 5) + '.');
 }
 
+/* Responsável local registra a entrada ou a saída do estagiário sem internet, com o GPS do próprio celular. */
+function checkinPor(estId, nome, tipo) {
+  const t = tipo.toLowerCase();
+  const o = overlay(`<h2>Registrar ${t} de ${esc(nome)}</h2><p class="mut">Use quando o estagiário estiver sem internet. Faça na hora em que ele(a) ${tipo === 'Entrada' ? 'chegar' : 'sair'}, na CPMA: o registro fica com o horário de agora e a localização (GPS) do <b>seu</b> celular, e já entra como confirmado por você.</p>
+    <label class="f">Observação (opcional)<input id="cpObs" placeholder="Ex.: celular sem internet"></label>
+    <button class="gold big" id="cpSend">Registrar ${t} agora</button><button class="ghost" onclick="closeOv()">Cancelar</button>`);
+  o.querySelector('#cpSend').onclick = async ev => {
+    const btn = ev.target; btn.disabled = true; btn.textContent = 'Obtendo a localização…';
+    const g = await gpsGet();
+    btn.disabled = false; btn.textContent = 'Registrar ' + t + ' agora';
+    if (g.err === 'bloqueado') { closeOv(); return gpsBlocked(() => { closeOv(); checkinPor(estId, nome, tipo); }); }
+    if (g.err) return toast('Localização não encontrada. Ligue a Localização do celular e tente de novo.');
+    if (await act(btn, 'checkinPor', { estId, tipo, lat: g.lat, lng: g.lng, acc: g.acc, obs: o.querySelector('#cpObs').value.trim() }, tipo + ' de ' + nome.split(' ')[0] + ' registrada às ' + new Date().toTimeString().slice(0, 5) + '.')) closeOv();
+  };
+}
+
 /* ---------- prorrogação e recesso ---------- */
 function solItem(x, papel) {
   const st = (v, quem) => v ? (/^Não concorda/.test(v) ? `<span class="pill bad">${quem}: não concorda</span>` : `<span class="pill ok">${quem} ✓</span>`) : `<span class="pill warn">${quem}: pendente</span>`;
@@ -578,7 +594,8 @@ function equipeItem(e) {
   // Entrada e saída aparecem para supervisor e responsável local; só o responsável local confirma.
   const ent = e.entrada ? `<span class="pill ${+e.atraso > 0 ? 'warn' : 'ok'}">Entrada ${e.entrada}${+e.atraso > 0 ? ' · ' + e.atraso + ' min' : ''}</span>${ckPill(e.enConf || {})}` : `<span class="pill bad">Sem entrada</span>`;
   const sai = e.saida ? `<span class="pill">Saída ${e.saida}</span>${ckPill(e.saConf || {})}` : '';
-  return `<div class="item"><div class="row sp">${who(e.id, e.nome)}</div><div class="row">${ent}${sai}</div>
+  const por = e.resp ? (!e.entrada ? `<button class="sm ghost" data-ckpor="Entrada" data-est="${e.id}" data-nome="${esc(e.nome)}">Registrar entrada por ele(a)</button>` : !e.saida ? `<button class="sm ghost" data-ckpor="Saída" data-est="${e.id}" data-nome="${esc(e.nome)}">Registrar saída por ele(a)</button>` : '') : '';
+  return `<div class="item"><div class="row sp">${who(e.id, e.nome)}</div><div class="row">${ent}${sai}${e.porResp ? '<span class="pill">Registrado pelo responsável local</span>' : ''}</div>${por ? `<div class="row">${por}</div>` : ''}
   <span class="mut">${esc(e.curso)} · ${esc(e.horario)}${e.papel === 'loc' ? ' · Supervisor(a): ' + esc(e.supervisor) : ''}</span>
   <span class="mut">Tel. ${esc(e.telefone)} · TCE até ${br(e.fim) || '—'}</span></div>`;
 }
@@ -656,6 +673,7 @@ function pesChamados() {
   return `<div class="card"><h2>Chamados dos estagiários</h2><div class="list">${S.chamados.map(c => chamadoItem(c, true)).join('') || '<span class="mut">Nenhum chamado.</span>'}</div></div>`;
 }
 function bindLocal() {
+  document.querySelectorAll('[data-ckpor]').forEach(b => b.onclick = () => checkinPor(b.dataset.est, b.dataset.nome, b.dataset.ckpor));
   document.querySelectorAll('[data-ckok],[data-ckno]').forEach(b => b.onclick = e => {
     const id = b.dataset.ckok || b.dataset.ckno, obs = (document.querySelector(`[data-ckobs="${id}"]`) || {}).value || '';
     if (b.dataset.ckno && !obs.trim()) return toast('Informe o motivo.');
@@ -778,6 +796,7 @@ function regLocal() {
     <div class="list">${L.checkinsPend.map(c => `<div class="item"><div class="row sp">${who(c.estId, c.nome)}<span class="mut">${brts(c.ts)}</span></div>
       <div class="row"><span class="pill">${esc(c.tipo)}</span>${+c.atraso > 0 ? `<span class="pill warn">${c.atraso} min de atraso</span>` : ''}${c.lat ? `<a href="https:\/\/www.google.com/maps?q=${c.lat},${c.lng}" target="_blank">ver no mapa</a>` : `<span class="pill bad">sem localização</span>`}</div>
       <input data-ckobs="${c.id}" placeholder="Motivo, se não confirmar"><div class="row"><button class="sm gold" data-ckok="${c.id}">Confirmar</button><button class="sm ghost" data-ckno="${c.id}">Não confirmar</button></div></div>`).join('')}
+    ${L.estagiarios.map(e => `<div class="item"><div class="row sp">${who(e.id, e.nome)}<span class="mut">${esc(e.horario)}</span></div><span class="mut">Se estiver sem internet, registre por ele(a) na hora da chegada ou da saída (usa o GPS do seu celular).</span><div class="row"><button class="sm ghost" data-ckpor="Entrada" data-est="${e.id}" data-nome="${esc(e.nome)}">Registrar entrada</button><button class="sm ghost" data-ckpor="Saída" data-est="${e.id}" data-nome="${esc(e.nome)}">Registrar saída</button></div></div>`).join('')}
     ${L.supervisoes.map(supItemPes).join('')}
     ${L.relatorios.map(r => `<div class="item"><div class="row sp">${who(r.estId, r.estNome)}${statusPill(r.status)}</div><span class="mut">Relatório de ${mesNome(r.mes)}</span><button class="sm gold" data-rloc="${r.id}">Ler e dar Ciente como responsável local</button></div>`).join('')}
     ${L.solicitacoes.map(x => solItem(x, 'loc')).join('')}</div></div>`;
