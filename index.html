@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Estágio Polícia Penal</title>
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAB1CAMAAAD5jAbTAAAAwFBMVEWonp6sYVosMSKeLCWtnE0wWDbr7e6VXDrYrVVdbFo5ckPMo07GnkyyfD1eKiFVWzS5lUj//wDFZmHJpKL2p1ShgU5HiEx2ax7OQjn/AAC0rT3/f3+pkTnHLCTPmzN/f388g0u5xcZdMymhbUvVwL7NpT3//38wMDB+f4C+mUm8v8D/fz8AAAAAAADQp1LDnU7IOTEvJxmoiUgXFQ9qWDFURym4lU2TeUKxNzB4ZDdHOSTIxsYxWDeMczzcsVckGxMZE8bYAAAAQHRSTlP///7/FP///uL//5teB//+UwH//wn+/wb/AQgC//8EAv//Bgr//wIF/4T/BP4A/P7//v7+/v7+/v/+/v///v7+aw682AAADXFJREFUeNq1Wgmb4jgOdRxCDiAp7jqn+pjumd0NJvcFgf//r/bJCRDAVFOzvf6+piHlPCvSk6xIZqu7R281HOLj7sHunjnu9SzRexn/H6D/WA2EGKyefz/0bPVgpan1gCV+M/QfqwdR+765ux/7EvqGKp+BHPkYuQC2etL4V1LPFPf1xgdk358DW8WT8ehXUsNKs97TOTCABrvcb0e9GyxXL+dznnojKcBt6N5qZg1Jot6o9z5+enoav8xImAdrl/jHkexgTEgwexljzvi9N5rh52hoXbD+Ahr8EoPhsnvxr+FAZNzvjDDaXcxZzuhGa3kTegTxqrhcE3qvt/z27duoNxxYIkv9i5Fmwmrm/DXqyTlrc8/BnpEaevn+LKRGeZkJEsKiz6yufMXgZneOKefUojd+UUI/Qx1xe2ccpkmZJGm192+OfZUmmJSGx5vIWZ8U0H+Qu/n/06isf3UcinWQd6X6jjgOueumaVqFYcXDOL6JnXQDATsi98T8CjOsEnMeZWshxy7lUsHrLMrNJOWKJaSznkE/PZ/c7cCw1IwAZO0kGA0RVbXAKu1CtEReVuE5Njnrf8YnaNARyEch4irJs+buqK7xLY1ToIvE32ci536cRmKNZ5FrrCMz3V9gr2YtNBz5W8eRk3kLCzFJpLjeVX7YQMfETtJ1tI5jEzOaJ1hHHYLWFgLBT0jLXi4dOZNkTnkishj0BbpID9B7QauINKwzBFjMC3lJuurGAT8RMhC8MDg/HDns/iVqfpm1H2cWLDAv/XAtoUMR4u8kKmJ3JEQoRcHfwqtA8H3Frhy5Inumu9BPcz/GXbGfm9AERgttiToi5WT0GDFWgOa4IhCw4dnDADmPcH+Ii3lEisNHBBF5uM9LKKSE7kH/NemI/sRht7XIo/AyyuwGbGmZZ94rolwuxmshIAunx2hMXJpxJdbyCVOsTg/ml6FPhCxFdgFdihFbDXdd7kQiK0mcfIc7sjT298laMu1AZhGZJQQFJISPJQjCkxD5ubOJ4YqNR6LsehNEyEgmMk7jg3CNLJrnuVmWZp7nUXM5E2ZVksUTwNJtZ3pNRO+JjTrxjqwPxeW7NE6a++emV4VXDr1HXIQpad0S3iQ0YonoBl/EwBl43RPekRzSnzWiV5ZdOfHlCNN5ROKvJbe7DExFb9Vjq++rQWuDsNVmGeV5mWt3RFGvTkoziszWCieLDVYvcPTZ04OkPgWIDAEhnEMNdR0pROZXV9LaNOtonfOEgtkhdIYw4kiGp6VVyxvTsFU4KbFWxG12hR038SZtd6b9kXmrJ4ImQ567Iylc8fh2375eLiPzXCy5HtD+C+ifMGTXuiExWrWT9Df2tUr49eyKjNjE6/HKOiN81sSda6GZbV8v6YnLR6yt0WEreL7QCHh9KRpjfYyNjf827EItplWq9CGhIf6ZtuorE8a2xGYS+cqYFykQ8WPWQj+tll1n95Xa+Nv+m2EBW6GT/XmykoAf49PeOIg+8gzDAXaDK5G3/KPZc/KXA/Tzaig+mLu1DYP7Uh824xy/7I+wW1U30DNA34oXxpbbjrHgXBqR/W3Hju1sDe7cQt+3qm6g32HHGzmZsVh4huM4BvyF2ZDc5oYBaFwz1HdwsPqkkDHsmKjn2c7iRwqkGJrmIGGfxXxrbI3Sdpyt8pZUPDevNYfEzFLne45jv3ry2e2GzTZRb7v1Xr0vW1ud94nl6ukMOlcmks7W87Z2iLRmT9sVsps9Uj1u47JtOMq8srTOcr6lEjqG8aqieNQLs9CLIiiCAN8wdD3AZwidK8Drc+ixEtpZGIkZBPqEMTbR3CAwg0L642aKVYJwq1T3hdRKXcOE3msS6NOvrq6zvhsUG+1N6/e1Ah/ADl8XWwUFE6urazVDnC0pJCj6TH8MdGYDlhVmv69jNVwL3NeFY2wVDBl1GPJyEbGP0MbWC6ScQaBVEJ9pBUHjGqD3BjTmKHn982NvjA3ji2F4QTGFejXYUd9smAapzcc3Cc057KjYd+TGeIohA0UMAXtLJw0kNsAD/c8GWn+D6HYQGItXhJPr+7K2aMIa7g3m1w/GDW/nATrQNQLXDlKz6aZvQ/2pU3sGV7LvqOslVH1lRb7gqXj1qoDorEPhfbeVWtM0VyfywVO50o49RKUGeqRSNeJb+FpzmJEVwSN40q+mB4UEcoQxh7sv+C1lNxvYIFOEf1DP+5IGJkz2Rnxz4SwtQ+RIndhD/LtWCXKn7w30eHWWrB6MiMjEtw5B96eTyRTqJV0TFVtovjAMsE/hNNDIWELPVg+KjWDrGERsKIS2LoRUPSBds83GbsWGnjHBvlZ2k5c10Ap9UNBDxHc82DDQMRClSOqCvgbBI/4ZBL1dcCX9ZIrztPouTNX+YnggV/qmacEjBpYgaFgU401jQeA5nrdwHGXIJl9nV1nIkda8/pE4nsZYq9wGWg6KhW/htvwBYiviapOJMEk95aZo1K9bxwXK5vEC+m3a30yD0C9fE67c3OWmzmgbmCtzD9hw4VSP7CD2CdqEMZnuGeaP9Ityh5QOycZQtWrLRexxJPmuod/gO4gpYAg2e1UUaRyS9ZTUI0eH+Y1tSlIzcvYTtDllbGoG3CGGKBUilc1uZk7gNZICrjG5fWlvTeRrkTEKJCQLUD++kUE908vdjXzPMbB/GRJabgKt1AV+4NtUN7bOYvvFUd4LX+9B11atzm7gLyI1XNK1ht12qkuXnE+R5jD2VXOdcs63N7I/0yKXuZE4uZNCr7xXm2sb+fz43Gw20/bLV2bGeCYXOYSuTqGIfOp0bx9M2WSim/DJBlizpWpsGwvg/0fXe3X1yeQR31RlOVCEoFUEKSZzDeCavm20TWrRbVdn/6a3g81UD2v9caJNsS8EexVFyBuV+a+LMFRoc4QKPaweNSaVotkVYuqfm01/aoaGPqEYQPuxq86ECfqaPvuiyb8gEysQolj/a6MNNp0CTpuEvNA0SzMpDhYq7BZasWgh/Q8SkWBppYHY00nBqyl5y1uw53B27Ga6nPf4GWgpNkVpHQ89CVzuvk0mb9pXxNTJpMBPxD6TdCEnqez4AbTukkSF7uLB55Oi4vhtTjVguZxDzRqs2uwKSn2QO7IP3pCQEriOp8OY2kSv9pRcx3HMzcAEMwLdQO5auDeq0LelPuSqeEOCwaDWSWDqLgY2MjC+QE4MZ9Vv12JuMCTZn5x9sfhiuPT4oMUjiDyZUKya6KljH98ek/gm9OXaUXQWSb4YFZRLaoEeJmCzWbhGJ/2QVTklr6/z3+w6LXF105xMAg1yF7oXnzueIlI03ji6DE9UDzmbHG/xdreHnolo7j42uikT1XFqdXi6fo2RVZzuM17lXlirU69WlXwQVJ+wy1wmOLL2tN7f13mQxbJ1rEhyRuyUpoaRmVCzJF9HUZTl9/U01hkmw1rUbYmSrhWf2fik7MSSBclIy1Pbzu9qpORl4pV5HlGlfhedJZRL1k2BS9IyVUhFFuX2HSqptJzqn9TbWq87xa2sKSEiMdtVxzowsM1M1tXX6yhPbtY+oYCy6VVQFVbedzI2dcOIfHg5sKITk9aHCqmo3SSPaIE8SVK34mEYIhF006Sso6xtPzQz51QJ9jo+Z31r8mskOccSGaf6dNuGkdf2+a7GClmngE0GyWtaW1bz8YXq151kt5JCH144jnEk3VExWkKH4EwIY4ftG0oV87VIqPJOzCxlNbyWc0V5Rm0E1J+HN7D3TpMql4ojUcinUkBiiTxJE1oisahHIHFi6SlJM/esV5CL3vj9VDHrtNaSVuj84LIxoOdR46AZdTlAVvBf9m3SpnMVxecttt6pskD90eQCGmulaZWsswMx6fYw8fe0CPVTqO4fUrl/3XXH1PpX2ytlh97r4IAdtdAgpDQdVJVEeRkBOpGNK9m3gY09C06YuLGfdcJZYg0OXVh2PDcwaLsoedM1E03ja01hLYmomRb7pVTyMVJmzZcwO4XVEsiHpjc7daMfRLTvNu4yydoDUCpIJPoBfoR5BFOkOU9A8aisWn3E0W64OnbYWbcffVo9DtsWhuRwmaS8XIcxCAcGRtytd6BJ1jYAOkFaPJyQu23j0ep5sOuyKOZwZlBjt7OazrPs0jTrUZ/0vKcM5xr0ut1udtahB1FEGV9Gi7BK4d1arpUQHz7Przs1Pj3RoYep6v6PX1ajAWgbf7oXje0DIr8sPzgOAcF7nwaPG+AzkVXnQ2YNeHldAC9rXCzN2tyrgX95PmS1bCWvL0J1JGpwHC50FopCswHuvd91YOYdkj8PBTWfz6CTdO+vIz9an4DzFvjl7rM4BP59aO26neY4iYRJWcfuEJp5tLOG36GKl08d86HzL8sueBwlYSTCLEvbKxUBgxKj90+fIBq351kOLWHywMQ/KFpKTH42/keHk55mDXgetg1MUCMMW8+TwLOnf37uiaLY0LrMCkG34V+rX503++WRKtw/Ou/hQ+WD0ZWD/KPTWuREnZMHqTw3MPo9B8Fg0G+DQ5HApNMOo3vOx913xqw55SFz3t3D6s5DfXceX5NnUzJyyYf7RP7MoTs6URMhxfj9h+6oft4T4hPH+T4BTWeMPoO8+i+1Gl2hg3TH4AAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ouro:#c59e4f;--ouro2:#a8833a;--preto:#111;--bg:#f4f2ee;--card:#fff;--tx:#1b1b1b;--mut:#5e5a52;--ln:#e2ddd2;--ok:#0b9247;--bad:#dc2828;--warn:#b7791f;--okbg:#e6f4ec;--badbg:#fdeaea;--warnbg:#fbf1dd}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Archivo,system-ui,sans-serif;margin:0;line-height:1.2;text-wrap:balance}
+h2{font-size:18px}h3{font-size:15px}
+a{color:var(--ouro2)}
+header{background:var(--preto);color:#fff;padding:12px 16px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:5;border-bottom:3px solid var(--ouro)}
+header .hb img{height:40px;width:auto;display:block}
+header .t{font-family:Archivo;font-weight:800;letter-spacing:.02em}
+header .s{font-size:12px;color:#d9c79f}
+main{max-width:860px;margin:0 auto;padding:14px 16px 96px;display:grid;gap:12px}
+body.reg main{max-width:1180px;padding-bottom:40px}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:14px;display:grid;gap:10px;min-width:0}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.sp{justify-content:space-between}
+.mut{color:var(--mut);font-size:13px}
+.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:600}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;background:#eee}
+.pill.ok{background:var(--okbg);color:var(--ok)}.pill.bad{background:var(--badbg);color:var(--bad)}.pill.warn{background:var(--warnbg);color:var(--warn)}.pill.gold{background:#f3ead7;color:#7a5d22}
+button,.btn{font:600 15px "Public Sans",sans-serif;border:0;border-radius:10px;padding:12px 16px;background:var(--preto);color:#fff;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+button.gold,.btn.gold{background:var(--ouro);color:#111}
+button.ghost,.btn.ghost{background:transparent;color:var(--tx);border:1px solid var(--ln)}
+button.sm,.btn.sm{padding:7px 11px;font-size:13px;border-radius:8px}
+button.big{width:100%;padding:16px;font-size:17px}
+button:disabled{opacity:.5}
+input,select,textarea{font:15px "Public Sans",sans-serif;width:100%;padding:10px;border:1px solid var(--ln);border-radius:9px;background:#fff;color:var(--tx)}
+textarea{min-height:80px;resize:vertical}
+label.f{display:grid;gap:4px;font-size:13px;font-weight:600}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.list{display:grid;gap:8px}
+.item{border:1px solid var(--ln);border-radius:10px;padding:10px 12px;display:grid;gap:4px;background:#fff;min-width:0}
+.item.gold{border-left:4px solid var(--ouro)}
+.tabbar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--ln);display:flex;justify-content:space-around;padding:6px 4px calc(6px + env(safe-area-inset-bottom));z-index:5}
+.tabbar button{background:none;color:var(--mut);flex:1;flex-direction:column;gap:2px;font-size:11px;padding:6px 2px;border-radius:8px}
+.tabbar button.on{color:#111;background:#f3ead7}
+.tabbar svg{width:22px;height:22px}
+.rtabs{display:flex;gap:6px;flex-wrap:wrap}
+.rtabs button{background:#fff;color:var(--tx);border:1px solid var(--ln);padding:8px 12px;font-size:13px}
+.rtabs button.on{background:var(--preto);color:#fff;border-color:var(--preto)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border-bottom:1px solid var(--ln);padding:7px 6px;text-align:left;vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
+.yn{display:flex;gap:6px}.yn label{flex:1;border:1px solid var(--ln);border-radius:8px;padding:6px;text-align:center;font-size:13px;cursor:pointer}
+.yn input{display:none}.yn input:checked+span{font-weight:700}
+.yn label:has(input:checked){background:#f3ead7;border-color:var(--ouro)}
+.q{display:grid;gap:6px;padding:8px 0;border-bottom:1px dashed var(--ln)}
+.center{text-align:center}
+.big-ic{width:56px;height:56px;margin:0 auto;color:var(--ouro2)}
+.sec-h{display:flex;align-items:center;gap:8px;margin-top:4px}
+.sec-h:before{content:"";width:4px;height:18px;background:var(--ouro);border-radius:2px}
+#toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);background:#111;color:#fff;padding:10px 16px;border-radius:10px;font-size:14px;z-index:20;max-width:90vw}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:15;display:grid;place-items:center;padding:16px}
+.ov .card{max-width:520px;width:100%;max-height:90vh;overflow:auto}
+img.prev{max-width:100%;border-radius:10px}
+.load{padding:40px;text-align:center;color:var(--mut)}
+.cracha{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--ln);box-shadow:0 6px 24px rgba(0,0,0,.12);max-width:360px;width:100%;margin:0 auto;display:grid;justify-items:center;text-align:center;padding-bottom:12px}
+.cr-top{background:#111;color:#fff;width:100%;display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:4px solid var(--ouro);text-align:left}
+.cr-top img{height:58px;width:auto}
+.cr-org{font:800 20px Archivo,sans-serif;letter-spacing:.06em;color:var(--ouro)}.cr-sub{font-size:12px;color:#ddd}
+.cr-reg{font-size:12px;font-weight:600;color:var(--mut);padding:8px 12px 0}
+.cr-foto{width:150px;height:200px;margin:10px 0 6px;border:3px solid var(--ouro);border-radius:8px;overflow:hidden;background:#eee;display:grid;place-items:center;color:var(--mut)}
+.cr-foto img{width:100%;height:100%;object-fit:cover}
+.cr-nome{font:800 19px Archivo,sans-serif;padding:0 14px;line-height:1.2;text-wrap:balance}
+.cr-func{margin-top:4px;background:var(--ouro);color:#111;font:800 13px Archivo,sans-serif;letter-spacing:.12em;padding:3px 14px;border-radius:4px}
+.cr-dados{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;text-align:left;font-size:13px;margin:10px 16px 6px;width:calc(100% - 32px)}
+.cr-dados dt{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding-top:2px}.cr-dados dd{margin:0;font-weight:600}
+.cr-val{font-weight:700;font-size:13px;color:var(--ok)}.cr-val.bad{color:var(--bad)}
+.cr-relogio{display:flex;align-items:center;gap:6px;font:600 13px ui-monospace,monospace;margin-top:4px}
+.cr-relogio .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);animation:pulse 1s infinite alternate}
+@keyframes pulse{from{opacity:1}to{opacity:.2}}
+.cr-obs{font-size:10px;color:var(--mut);padding:6px 14px 0}
+.cr-ov{background:#111;align-content:center;gap:12px;overflow:auto}
+.who{display:inline-flex;align-items:center;gap:8px;min-width:0}
+.av{width:32px;height:42px;border-radius:5px;object-fit:cover;flex:none;border:1.5px solid var(--ouro);cursor:zoom-in;background:#eee}
+.av.lg{width:54px;height:72px}
+.av.ini{display:inline-grid;place-items:center;font:700 12px Archivo,sans-serif;color:#7a5d22;background:#f3ead7;border-style:dashed;cursor:default}
+.legal{font-size:13px;line-height:1.5;max-height:46vh;overflow:auto;border:1px solid var(--ln);border-radius:9px;padding:10px;background:#faf8f4}
+</style>
+</head>
+<body>
+<header><span class="hb"><img id="brasao" src="data:image/png;base64,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"></span>
+<div><div class="t">Estágio Polícia Penal</div><div class="s" id="sub">SRPMA Metropolitana de São Paulo</div></div></header>
+<main id="app"><div class="load">Carregando…</div></main>
+<nav class="tabbar" id="tabbar" hidden></nav>
+<div id="toast" hidden></div>
+
+<script>
+window.__a=1;
+window.onerror = function (msg, src, l, c) { var a = document.getElementById('app'); if (a) a.innerHTML = '<div class="card"><b>Erro no aplicativo</b><span class="mut">' + msg + ' (linha ' + l + ')</span></div>'; };
+document.getElementById('app').innerHTML = '<div class="load">Carregando…</div>';
+</script>
+<script>
+const TOKEN = (new URLSearchParams(location.search).get('t') || '').trim();
+const BRASAO_IMG = "<img id=\"brasao\" src=\"data:image/png;base64,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\">";
+let DEV = 'nostorage';
+try { DEV = localStorage.getItem('srpma_dev') || ''; if (!DEV) { DEV = 'd' + Math.random().toString(36).slice(2) + Date.now().toString(36); localStorage.setItem('srpma_dev', DEV); } } catch (e) {}
+let S = null, TAB = '', SUBTAB = '';
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const br = d => d ? String(d).slice(0,10).split('-').reverse().join('/') : '';
+const brts = t => t ? br(t) + ' ' + String(t).slice(11,16) : '';
+const MESES = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+const mesNome = m => { const [y, mm] = String(m).split('-'); return MESES[+mm - 1] + ' de ' + y; };
+const money = v => v === '' || v == null ? '—' : Number(v).toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
+const digits = s => String(s || '').replace(/\D/g, '');
+
+const API_URL = 'https:' + '\/\/script.google.com/macros/s/AKfycbyE2LiLkWzLQ541E8A3jiKaNNQ2fii_DOMwM4in3fbwZAD9jmvKsDbRbxWt-ynl0_GC/exec';
+function call(action, p) {
+  return fetch(API_URL, { method: 'POST', body: JSON.stringify({ t: TOKEN, d: DEV, a: action, p: p || {} }) })
+    .then(r => { if (!r.ok) throw new Error('Falha de conexão (' + r.status + '). Tente de novo.'); return r.json(); })
+    .then(r => { if (!r.ok) throw new Error(r.err); return r.data; });
+}
+function toast(m) { const t = $('#toast'); t.textContent = m; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 3200); }
+async function act(btn, action, p, okMsg) {
+  if (btn) { btn.disabled = true; btn.dataset.t = btn.textContent; btn.textContent = 'Enviando…'; }
+  try { await call(action, p); if (okMsg) toast(okMsg); await reload(); return true; }
+  catch (e) { toast('Erro: ' + e.message); return false; }
+  finally { if (btn) { btn.disabled = false; btn.textContent = btn.dataset.t; } }
+}
+async function reload() { S = await call('boot'); render(); }
+function overlay(html) { const d = document.createElement('div'); d.className = 'ov'; d.innerHTML = '<div class="card">' + html + '</div>'; d.addEventListener('click', e => { if (e.target === d) d.remove(); }); document.body.appendChild(d); return d; }
+function closeOv() { document.querySelectorAll('.ov').forEach(o => o.remove()); }
+
+/* ---------- arquivos e foto ---------- */
+function fileToB64(file, maxW) {
+  return new Promise((res, rej) => {
+    if (!file) return rej(new Error('Nenhum arquivo.'));
+    if (file.size > 9e6) return rej(new Error('Arquivo maior que 9 MB.'));
+    const r = new FileReader();
+    r.onload = () => {
+      if (!/^image[/]/.test(file.type) || !maxW) return res({ b64: r.result, mime: file.type || 'application/pdf' });
+      const img = new Image();
+      img.onload = () => { const k = Math.min(1, maxW / img.width); const c = document.createElement('canvas'); c.width = img.width * k; c.height = img.height * k;
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); res({ b64: c.toDataURL('image/jpeg', .72), mime: 'image/jpeg' }); };
+      img.onerror = () => res({ b64: r.result, mime: file.type });
+      img.src = r.result;
+    };
+    r.onerror = rej; r.readAsDataURL(file);
+  });
+}
+
+/* ---------- GPS ---------- */
+function gpsGet() {
+  return new Promise(res => {
+    if (!navigator.geolocation) return res({ err: 'indisponivel' });
+    navigator.geolocation.getCurrentPosition(p => res({ lat: p.coords.latitude, lng: p.coords.longitude, acc: Math.round(p.coords.accuracy) }),
+      e => res({ err: e.code === 1 ? 'bloqueado' : 'indisponivel' }), { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 });
+  });
+}
+const GPS_HELP = `<div class="item"><b>Android (Chrome)</b><span class="mut">Toque no cadeado ao lado do endereço › Permissões › Local › Permitir. Confira também se a Localização do celular está ligada (puxe a barra de cima › Local).</span></div>
+<div class="item"><b>iPhone</b><span class="mut">Ajustes › Privacidade e Segurança › Serviços de Localização: ligado. Depois, em Ajustes › Safari (ou Chrome) › Localização › Perguntar ou Permitir.</span></div>
+<div class="item"><b>Abriu pelo WhatsApp?</b><span class="mut">Toque nos três pontinhos e escolha “Abrir no navegador” (Chrome ou Safari). O navegador interno do WhatsApp às vezes bloqueia o GPS.</span></div>`;
+function gpsBlocked(retry) {
+  const o = overlay(`<div class="center"><svg class="big-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+    <h2 class="center">Libere a localização (GPS)</h2>
+    <p class="mut center">O check-in só é registrado com a sua localização. Ela está bloqueada neste aparelho. Desbloqueie e toque em “Tentar de novo”.</p>${GPS_HELP}
+    <button class="gold big" id="gpsRetry">Tentar de novo</button>`);
+  o.querySelector('#gpsRetry').onclick = () => { o.remove(); retry(); };
+}
+
+/* ============================== RENDER ============================== */
+function render() {
+  document.body.className = S.kind;
+  if (S.kind === 'est') return renderEst();
+  if (S.kind === 'pes') return renderPes();
+  return renderReg();
+}
+function tabbar(tabs) {
+  const tb = $('#tabbar'); tb.hidden = false;
+  tb.innerHTML = tabs.map(t => `<button data-t="${t[0]}" class="${TAB === t[0] ? 'on' : ''}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${t[2]}</svg>${t[1]}</button>`).join('');
+  tb.querySelectorAll('button').forEach(b => b.onclick = () => { TAB = b.dataset.t; SUBTAB = ''; render(); scrollTo(0, 0); });
+}
+const IC = {
+  home:'<path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/>',
+  cal:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  vid:'<rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/>',
+  money:'<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/>',
+  more:'<circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/>',
+  team:'<circle cx="9" cy="8" r="3.5"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/><circle cx="17.5" cy="8.5" r="2.5"/><path d="M17 14c3 0 5 2 5 5"/>',
+  doc:'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h7M9 17h7"/>',
+  chat:'<path d="M4 4h16v12H8l-4 4z"/>',
+  id:'<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M8 17c1-2 7-2 8 0M10 3v2h4V3"/>',
+  bell:'<path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 20a2 2 0 004 0"/>'
+};
+
+function avisoItem(a) {
+  return `<div class="item gold"><div class="row sp"><span class="pill gold">${esc(a.tipo || 'Aviso')}</span><span class="mut">${br(a.ts)}</span></div>
+  <b>${esc(a.titulo)}</b>${a.texto ? `<span>${esc(a.texto)}</span>` : ''}${a.link ? `<a href="${esc(a.link)}" target="_blank" rel="noopener">Abrir link ↗</a>` : ''}</div>`;
+}
+
+/* ============================== ESTAGIÁRIO ============================== */
+function renderEst() {
+  for (const k in PICKED) delete PICKED[k];
+  $('#sub').textContent = S.est.nome + ' · CPMA ' + S.est.central;
+  if (!S.est.lgpdEm) return renderLGPD();
+  let gpsOk = false; try { gpsOk = localStorage.getItem('srpma_gps') === '1'; } catch (e) {}
+  if (!gpsOk) return renderGpsIntro();
+  if (!TAB) TAB = 'inicio';
+  tabbar([['inicio','Início',IC.home],['cracha','Crachá',IC.id],['ausencias','Ausências',IC.cal],['supervisao','Supervisão',IC.vid],['pagamento','Pagamento',IC.money],['mais','Mais',IC.more]]);
+  const v = { inicio: estInicio, cracha: estCracha, ausencias: estAusencias, supervisao: estSupervisao, pagamento: estPagamento, mais: estMais }[TAB]();
+  $('#app').innerHTML = v; bindEst();
+}
+
+function renderLGPD() {
+  $('#tabbar').hidden = true;
+  $('#app').innerHTML = `<div class="card"><span class="lbl">Primeiro acesso</span><h2>Termo de ciência – uso da localização</h2>
+  <div class="legal">
+  <p>Eu, <b>${esc(S.est.nome)}</b>, estagiário(a) da CPMA ${esc(S.est.central)}, declaro ciência de que a <b>${esc(S.regional)}</b> (Polícia Penal do Estado de São Paulo), concedente do meu estágio, tratará os dados pessoais abaixo neste aplicativo, nos termos da Lei Geral de Proteção de Dados – Lei 13.709/2018 (art. 7º, II e III, e art. 23) e da Lei 11.788/2008 (Lei do Estágio):</p>
+  <p><b>1. Localização GPS</b>, coletada apenas no momento em que eu registrar entrada ou saída, para comprovar a frequência e o local do estágio. O aplicativo não acompanha minha localização em outros momentos.</p>
+  <p><b>2. Dados do estágio</b> (TCE, termos aditivos, frequência, ausências, atestados, calendário escolar, relatórios de supervisão, recesso e pagamento) para a gestão do estágio, prestação de contas ao CIEE e à instituição de ensino e composição do meu prontuário de estágio.</p>
+  <p><b>3. Acesso:</b> os dados ficam em conta institucional da ${esc(S.regional)} e só são vistos pela regional, pelo meu supervisor de estágio e pelo responsável local da CPMA, na medida das funções de cada um. Atestados ficam visíveis só para a regional.</p>
+  <p><b>4. Guarda:</b> pelo período do estágio e pelo prazo de guarda do prontuário. Posso pedir acesso ou correção dos meus dados à regional pela aba Chamados.</p>
+  <p><b>5. Autorização:</b> o uso destes dados para a gestão do estágio é autorizado pela CRSC – Coordenadoria de Reintegração Social e Cidadania (SAP) e pela ${esc(S.regional)}, na condição de concedente.</p>
+  <p><b>6. Link individual:</b> o meu link é pessoal e fica vinculado a este aparelho. Não devo repassá-lo. Se trocar de celular, peço a liberação à regional.</p>
+  </div>
+  <label class="f">Local (cidade) <input id="lgLocal" placeholder="Ex.: São Paulo"></label>
+  <label class="row" style="font-weight:600"><input type="checkbox" id="lgOk" style="width:auto"> Li e estou ciente do termo acima.</label>
+  <button class="gold big" id="lgBtn">Ciente</button></div>`;
+  $('#lgBtn').onclick = async e => {
+    if (!$('#lgOk').checked || !$('#lgLocal').value.trim()) return toast('Marque a ciência e informe o local.');
+    await act(e.target, 'lgpd', { local: $('#lgLocal').value.trim() }, 'Ciência registrada.');
+  };
+}
+
+function renderGpsIntro() {
+  $('#tabbar').hidden = true;
+  $('#app').innerHTML = `<div class="card center"><svg class="big-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+  <h2>Autorize a localização (GPS)</h2>
+  <p class="mut">O check-in de entrada e saída usa a localização do celular. Toque no botão abaixo e escolha <b>Permitir</b> quando o celular perguntar. Deixe o GPS sempre desbloqueado para este aplicativo.</p>
+  <button class="gold big" id="gpsBtn">Permitir localização</button><div id="gpsMsg" class="mut"></div></div>`;
+  $('#gpsBtn').onclick = async () => {
+    $('#gpsMsg').textContent = 'Aguardando o celular…';
+    const g = await gpsGet();
+    if (g.err === 'bloqueado') { $('#gpsMsg').textContent = ''; return gpsBlocked(() => $('#gpsBtn').click()); }
+    if (g.err) { $('#gpsMsg').innerHTML = 'Não foi possível obter a localização agora. Ligue a Localização do celular e tente de novo.'; return; }
+    try { localStorage.setItem('srpma_gps', '1'); } catch (e) {}
+    toast('Localização autorizada.'); render();
+  };
+}
+
+function estInicio() {
+  const ck = S.checkinsHoje || [];
+  const en = ck.find(c => c.tipo === 'Entrada'), sa = ck.find(c => c.tipo === 'Saída');
+  const sup = S.supervisoes.find(s => s.status === 'Marcada' && s.data >= S.hoje);
+  const pend = S.relatorios.find(r => r.status === 'Aguardando estagiário');
+  return `<div class="card"><div class="row sp"><div><span class="lbl">Hoje · ${br(S.hoje)}</span><h2>Olá, ${esc(S.est.nome.split(' ')[0])}</h2></div><span class="pill">${esc(S.est.horario || '')}</span></div>
+    <div class="grid2"><div class="item"><span class="lbl">Entrada</span><b>${en ? en.hora : '—'}</b>${en ? ckPill(en) : ''}</div><div class="item"><span class="lbl">Saída</span><b>${sa ? sa.hora : '—'}</b>${sa ? ckPill(sa) : ''}</div></div>
+    ${S.vigencia === 'A iniciar' ? `<div class="item gold"><b>Seu estágio começa em ${br(S.est.inicio)}</b><span class="mut">O check-in fica disponível a partir dessa data, conforme a vigência do seu TCE. Enquanto isso, você já pode preencher o crachá e ver os documentos.</span></div>`
+      : S.vigencia === 'Encerrado' ? `<div class="item" style="border-color:var(--bad)"><b>TCE encerrado em ${br(S.est.fim)}</b><span class="mut">O check-in não está mais disponível. Procure a regional.</span></div>`
+      : !en ? `<button class="gold big" data-ck="Entrada">Registrar entrada (check-in)</button>` : !sa ? `<button class="big" data-ck="Saída">Registrar saída (check-out)</button>` : `<div class="pill ok center">Entrada e saída registradas hoje</div>`}
+    <div class="mut">O registro usa a localização do celular (GPS) e fica pendente até o responsável local da CPMA confirmar.</div></div>
+    ${(S.checkinsRecusados || []).length ? `<div class="card" style="border-color:var(--bad)"><b>Registros não confirmados pelo responsável local</b>${S.checkinsRecusados.map(c => `<span class="mut">${brts(c.ts)} · ${esc(c.tipo)} · ${esc(c.confirmacaoObs)} (${esc(c.confirmadoPor)})</span>`).join('')}<span class="mut">Em caso de dúvida, abra um chamado.</span></div>` : ''}
+    ${estAlertaTce()}
+    ${S.solicitacoes.filter(x => !x.estOk && /^Aguardando/.test(x.status)).map(x => `<div class="card">${solItem(x, 'est')}</div>`).join('')}
+    ${pend ? `<div class="card" style="border-color:var(--ouro)"><b>Relatório de ${mesNome(pend.mes)} aguardando sua ciência</b><button class="gold" data-go="supervisao">Abrir</button></div>` : ''}
+    ${sup ? `<div class="card"><span class="lbl">Supervisão mensal marcada</span><b>${br(sup.data)} às ${esc(sup.hora)}</b>${sup.estCiente ? '<span class="pill ok">Confirmada por você</span>' : '<button class="gold" data-go="supervisao">Confirmar com Ciente</button>'}${sup.link ? `<a class="btn" href="${esc(sup.link)}" target="_blank">Entrar na videochamada</a>` : ''}</div>` : ''}
+    <div class="card"><h3 class="sec-h">Avisos</h3><div class="list">${S.avisos.map(avisoItem).join('') || '<span class="mut">Nenhum aviso.</span>'}</div></div>`;
+}
+
+function estAlertaTce() {
+  const a = S.alertaTce; if (!a) return '';
+  const sol = S.solicitacoes.find(x => x.tipo === 'Prorrogação');
+  if (sol) return `<div class="card"><span class="lbl">Seu TCE termina em ${a.dias} dias (${br(a.fim)})</span>${solItem(sol, 'est')}</div>`;
+  return `<div class="card" style="border-color:var(--bad)"><span class="pill bad">Alerta · TCE termina em ${a.dias} dias (${br(a.fim)})</span>
+    <h3>Tem interesse em prorrogar o estágio?</h3><span class="mut">${TXT_PRORROG}</span>
+    ${fileField('prMat', 'Comprovante de matrícula atualizado')}
+    <label class="f">Observação (opcional)<input id="prTxt"></label><button class="gold big" id="prBtn">Tenho interesse na prorrogação</button></div>`;
+}
+
+/* ---------- crachá virtual ---------- */
+function crachaHtml() {
+  const e = S.est, venc = e.fim && e.fim < S.hoje;
+  return `<div class="cracha">
+    <div class="cr-top">${BRASAO_IMG}<div><div class="cr-org">POLÍCIA PENAL</div><div class="cr-sub">do Estado de São Paulo</div></div></div>
+    <div class="cr-reg">${esc(S.regional)}</div>
+    <div class="cr-foto">${e.foto ? `<img src="${e.foto}" alt="Foto de ${esc(e.nome)}">` : '<span>Sem foto</span>'}</div>
+    <div class="cr-nome">${esc(e.nome)}</div>
+    <div class="cr-func">ESTAGIÁRIO(A)</div>
+    <dl class="cr-dados"><dt>RG</dt><dd>${esc(e.rg || '—')}</dd><dt>CPF</dt><dd>${esc(e.cpf || '—')}</dd><dt>Local</dt><dd>CPMA ${esc(e.central)}</dd><dt>Curso</dt><dd>${esc(e.curso)}${e.instituicao ? ' · ' + esc(e.instituicao) : ''}</dd>
+    <dt>Horário</dt><dd>${esc(e.horario)}</dd><dt>TCE</dt><dd>${esc(e.tce || '—')} · ${br(e.inicio)} a ${br(e.fim) || '—'}</dd><dt>Supervisor(a)</dt><dd>${esc(S.supervisor.nome || '—')}</dd></dl>
+    <div class="cr-val ${venc ? 'bad' : ''}">${venc ? 'TCE VENCIDO EM ' + br(e.fim) : 'Válido até ' + (br(e.fim) || '—')}</div>
+    <div class="cr-relogio"><span class="dot"></span><span class="crClock"></span></div>
+    <div class="cr-obs">Estágio regido pela Lei 11.788/2008. Não gera vínculo empregatício.</div></div>`;
+}
+function estCracha() {
+  const falta = !S.est.rg || !S.est.cpf;
+  return `${falta ? `<div class="card" style="border-color:var(--ouro)"><b>Complete seus dados do crachá</b><span class="mut">Preencha uma vez. Depois, só a regional pode alterar.</span>
+    <div class="grid2"><label class="f">RG<input id="crRg" placeholder="00.000.000-0"></label><label class="f">CPF<input id="crCpf" inputmode="numeric" placeholder="000.000.000-00"></label></div>
+    <button class="gold" id="crDados">Salvar RG e CPF</button></div>` : ''}${crachaHtml()}
+  ${S.est.fotoPend ? `<div class="card"><span class="pill warn">Foto enviada – aguardando aprovação do responsável local da CPMA</span><div class="row"><img src="${S.est.fotoPend}" style="width:60px;height:80px;object-fit:cover;border-radius:6px"><span class="mut">Ela passa a valer no crachá depois de aprovada.</span></div></div>` : ''}
+  ${!S.est.fotoPend && /Recusada|Removida/.test(S.est.fotoStatus) ? `<div class="card" style="border-color:var(--bad)"><span class="pill bad">Foto ${S.est.fotoStatus === 'Recusada' ? 'recusada' : 'removida'}</span><span>${esc(S.est.fotoObs)}</span><span class="mut">Envie outra foto.</span></div>` : ''}
+  ${podeFoto() ? `<div class="card"><b>${S.est.foto ? 'Envie a nova foto do crachá (troca liberada pela regional)' : 'Coloque sua foto no crachá'}</b>
+    <span class="mut">Atenção: a foto é enviada <b>uma única vez</b>. Use foto de rosto, de frente, fundo claro, sem óculos escuros nem boné (padrão 3×4). A foto é recortada automaticamente e só vale no crachá depois de aprovada pelo responsável local da CPMA. Depois, a troca só é possível com solicitação à regional.</span>
+    <label class="btn gold">Escolher ou tirar foto<input type="file" id="crFoto" accept="image/&#42;" hidden></label></div>`
+  : S.est.foto && !S.est.fotoPend ? (S.est.fotoTroca === 'Solicitada' ? `<div class="card"><span class="pill warn">Troca de foto solicitada – aguardando liberação da regional</span></div>`
+    : `<div class="card"><b>Precisa trocar a foto?</b><span class="mut">A troca só é feita com solicitação à regional.</span><input id="crMot" placeholder="Motivo da troca"><button class="ghost" id="crPed">Solicitar troca de foto</button></div>`) : ''}
+  <button class="big" id="crFull">Mostrar crachá em tela cheia</button>`;
+}
+/* Envio de documento: tirar foto com a câmera do celular ou escolher arquivo (foto ou PDF). */
+const PICKED = {};
+function fileField(id, label) {
+  return `<div class="f" style="display:grid;gap:6px"><span style="font-size:13px;font-weight:600">${label}</span><div class="row">
+    <label class="btn sm gold">📷 Tirar foto<input type="file" accept="image/&#42;" capture="environment" hidden data-pick="${id}"></label>
+    <label class="btn sm ghost">Escolher arquivo<input type="file" accept="image/&#42;,application/pdf" hidden data-pick="${id}"></label></div>
+    <span class="mut" id="${id}_nome">Nenhum arquivo escolhido.</span></div>`;
+}
+function pickFile(id) { return PICKED[id] || null; }
+document.addEventListener('change', ev => { const i = ev.target; if (!i.dataset || !i.dataset.pick || !i.files[0]) return;
+  PICKED[i.dataset.pick] = i.files[0]; const n = document.getElementById(i.dataset.pick + '_nome'); if (n) n.textContent = '✓ ' + (i.files[0].name || 'foto da câmera'); });
+function podeFoto() { const e = S.est; return !e.fotoPend && (!e.foto || e.fotoTroca === 'Liberada'); }
+function foto3x4(file) {
+  return new Promise((res, rej) => {
+    if (!file) return rej(new Error('Nenhuma foto.'));
+    const r = new FileReader();
+    r.onload = () => { const img = new Image(); img.onload = () => {
+      const W = 300, H = 400, k = Math.max(W / img.width, H / img.height), w = img.width * k, h = img.height * k;
+      const c = document.createElement('canvas'); c.width = W; c.height = H; const x = c.getContext('2d');
+      x.fillStyle = '#fff'; x.fillRect(0, 0, W, H); x.drawImage(img, (W - w) / 2, (H - h) / 2.6, w, h);
+      let q = .8, out = c.toDataURL('image/jpeg', q); while (out.length > 42000 && q > .3) { q -= .1; out = c.toDataURL('image/jpeg', q); }
+      res(out); }; img.onerror = () => rej(new Error('Imagem inválida.')); img.src = r.result; };
+    r.readAsDataURL(file);
+  });
+}
+function tickClock() {
+  const d = new Date(), t = d.toLocaleDateString('pt-BR') + ' · ' + d.toLocaleTimeString('pt-BR');
+  document.querySelectorAll('.crClock').forEach(el => el.textContent = t);
+}
+setInterval(tickClock, 1000);
+
+/* Foto aprovada do crachá ao lado do nome do estagiário (identificação visual). */
+function fotoDe(id) {
+  if (S.kind === 'est') return S.est.id === id ? S.est.foto : '';
+  if (S.fotos) return S.fotos[id] || '';
+  const e = (S.estagiarios || []).find(x => x.id === id); return e ? e.foto : '';
+}
+function av(id, nome, size) {
+  const f = fotoDe(id), cls = 'av' + (size === 'lg' ? ' lg' : '');
+  if (f) return `<img class="${cls}" src="${f}" alt="" data-zoom="${id}">`;
+  const ini = String(nome || '?').split(' ').filter(Boolean); return `<span class="${cls} ini">${esc((ini[0] || '?')[0] + (ini.length > 1 ? ini[ini.length - 1][0] : ''))}</span>`;
+}
+function who(id, nome, plain) { return `<span class="who">${av(id, nome)}${plain ? esc(nome) : `<b>${esc(nome)}</b>`}</span>`; }
+document.addEventListener('click', ev => { const z = ev.target.closest && ev.target.closest('[data-zoom]'); if (!z) return; ev.stopPropagation();
+  overlay(`<img src="${z.src}" style="width:100%;max-width:300px;margin:0 auto;border-radius:10px;border:3px solid var(--ouro)"><button class="ghost" onclick="closeOv()">Fechar</button>`); }, true);
+
+function ckPill(c) {
+  const ontem = new Date(new Date(S.hoje + 'T12:00:00') - 864e5).toISOString().slice(0, 10);
+  if ((!c.confirmacao || c.confirmacao === 'Pendente') && c.ts && String(c.ts).slice(0, 10) < ontem) return '<span class="pill bad">Sem confirmação no prazo</span>';
+  return c.confirmacao === 'Confirmado' ? `<span class="pill ok">Confirmado${c.confirmadoPor ? ' · ' + esc(c.confirmadoPor.split(' ')[0]) : ''}</span>`
+    : c.confirmacao === 'Não confirmado' ? `<span class="pill bad">Não confirmado</span>` : '<span class="pill warn">Aguardando confirmação</span>';
+}
+
+function estAusencias() {
+  return `<div class="card"><h2>Comunicar ausência, atraso ou saída</h2>
+  <p class="mut">Avise antes sempre que possível. O seu supervisor, o responsável local e a regional recebem a comunicação. Em período de provas, a carga horária pode ser reduzida pelo menos à metade, se a instituição de ensino informar as datas (Lei 11.788/2008, art. 10, § 2º) – anexe o calendário ou a declaração.</p>
+  <label class="f">Tipo<select id="cTipo">${S.tiposCom.map(t => `<option>${t}</option>`).join('')}</select></label>
+  <div class="grid2"><label class="f">Data<input type="date" id="cData" value="${S.hoje}"></label>
+  <label class="f">Das (hora)<input type="time" id="cIni"></label><label class="f">Até (hora)<input type="time" id="cFim"></label></div>
+  <label class="f">Motivo<textarea id="cMot" placeholder="Ex.: prova de Processo Penal às 19h; consulta médica; atraso no trem"></textarea></label>
+  ${fileField('cArq', 'Comprovante (opcional: atestado, declaração, calendário de provas)')}
+  <div class="mut">Atestado médico fica visível só para a regional. Não é preciso informar diagnóstico.</div>
+  <button class="gold big" id="cBtn">Enviar comunicação</button></div>
+  <div class="card"><h3 class="sec-h">Minhas comunicações</h3><div class="list">${S.comunicacoes.map(c => `<div class="item"><div class="row sp"><b>${esc(c.tipo)}</b><span class="mut">${br(c.data)} ${c.hIni ? esc(c.hIni) + (c.hFim ? '–' + esc(c.hFim) : '') : ''}</span></div>
+    <span class="mut">${esc(c.motivo)}</span><div class="row">${c.supCiente ? '<span class="pill ok">Supervisor ciente</span>' : '<span class="pill">Supervisor: pendente</span>'}${c.regCiente ? '<span class="pill ok">Regional ciente</span>' : ''}${c.anexoUrl ? '<span class="pill">Com anexo</span>' : ''}</div></div>`).join('') || '<span class="mut">Nenhuma comunicação.</span>'}</div></div>`;
+}
+
+function estSupervisao() {
+  const prox = S.supervisoes.filter(s => s.data >= S.hoje);
+  return `<div class="card"><h2>Supervisão mensal</h2><span class="mut">Supervisor(a) de estágio: <b>${esc(S.supervisor.nome || 'a definir')}</b></span>
+    <span class="mut">A supervisão é feita por videochamada, sempre dentro do seu horário de estágio. Confirme o agendamento com Ciente.</span>
+    <div class="list">${prox.map(s => `<div class="item gold"><b>${br(s.data)} às ${esc(s.hora)}</b>${s.obs ? `<span class="mut">${esc(s.obs)}</span>` : ''}
+      ${s.estCiente ? `<span class="pill ok">Você confirmou em ${brts(s.estCiente)}</span>` : `<button class="gold sm" data-csup="${s.id}">Ciente – confirmo o agendamento</button>`}
+      ${s.link ? `<a class="btn sm" href="${esc(s.link)}" target="_blank">Entrar na videochamada</a>` : ''}</div>`).join('') || '<span class="mut">Nenhuma supervisão marcada.</span>'}</div></div>
+  <div class="card"><h3 class="sec-h">Relatórios mensais de supervisão</h3><div class="list">${S.relatorios.map(r => `<div class="item"><div class="row sp"><b>${mesNome(r.mes)}</b>${statusPill(r.status)}</div>
+    ${r.status === 'Aguardando estagiário' ? `<button class="gold sm" data-rel="${r.id}">Ler e dar Ciente</button>` : `<button class="ghost sm" data-relv="${r.id}">Ver relatório</button>`}</div>`).join('') || '<span class="mut">Nenhum relatório ainda.</span>'}</div></div>`;
+}
+function statusPill(s) { return `<span class="pill ${s === 'Concluído' ? 'ok' : s === 'Rascunho' ? '' : 'warn'}">${esc(s)}</span>`; }
+
+function estPagamento() {
+  return `<div class="card"><h2>Pagamento</h2><p class="mut">O CIEE paga a bolsa-auxílio e o auxílio-transporte no <b>10º dia útil do mês seguinte</b> ao mês estagiado (ex.: novembro é pago no 10º dia útil de dezembro). Os valores abaixo são lançados pela regional depois do lançamento no portal do CIEE.</p></div>
+  ${S.pagamentos.map(p => `<div class="card"><div class="row sp"><h3>${mesNome(p.mes)}</h3><span class="pill gold">Pago em ${br(p.dataPagto) || '—'}</span></div>
+    <table><tr><td>Bolsa-auxílio</td><td style="text-align:right">${money(p.bolsa)}</td></tr><tr><td>Auxílio-transporte (${esc(p.dias)} dias × ${money(p.vtDia)})</td><td style="text-align:right">${money(p.vt)}</td></tr>
+    <tr><th>Total</th><th style="text-align:right">${money(p.total)}</th></tr></table>${p.obs ? `<span class="mut">${esc(p.obs)}</span>` : ''}
+    ${p.recebido === 'Sim' ? `<span class="pill ok">Você confirmou o recebimento em ${brts(p.recebidoEm)}</span>`
+      : p.recebido === 'Não' ? `<span class="pill bad">Você informou que não recebeu (${brts(p.recebidoEm)})</span><span class="mut">${esc(p.recebidoObs)}</span>`
+      : (p.dataPagto && p.dataPagto <= S.hoje ? `<div class="item gold"><b>O CIEE já depositou na sua conta?</b><span class="mut">Confira o extrato e confirme. Se o valor não entrou ou veio diferente, informe abaixo.</span>
+        <input data-pgobs="${p.id}" placeholder="Se não recebeu ou veio diferente, explique"><div class="row"><button class="sm gold" data-pgok="${p.id}">Ciente – recebi o pagamento</button><button class="sm ghost" data-pgno="${p.id}">Não recebi / veio diferente</button></div></div>`
+      : `<span class="mut">Depois do dia ${br(p.dataPagto)}, confirme aqui que recebeu.</span>`)}</div>`).join('') || '<div class="card mut">Nenhum pagamento lançado ainda.</div>'}`;
+}
+
+function estMais() {
+  const e = S.est, rc = S.recesso;
+  const docs = S.docs;
+  return `<div class="card"><h2>Meu estágio</h2><table>
+    <tr><td>CPMA</td><td><b>${esc(e.central)}</b><br><span class="mut">${esc(S.endereco)}</span></td></tr>
+    <tr><td>RG / CPF</td><td>${esc(e.rg || '—')} · ${esc(e.cpf || '—')}</td></tr>
+    <tr><td>Curso</td><td>${esc(e.curso)} ${e.instituicao ? '· ' + esc(e.instituicao) : ''}</td></tr>
+    <tr><td>Horário / carga</td><td>${esc(e.horario)} · ${esc(e.carga)}</td></tr>
+    <tr><td>TCE</td><td>${esc(e.tce || '—')} · ${br(e.inicio)} a ${br(e.fim) || '—'}</td></tr>
+    <tr><td>Supervisor(a) de estágio</td><td>${esc(S.supervisor.nome || 'a definir')}</td></tr>
+    <tr><td>Responsável local</td><td>${S.responsavel.mesmo ? 'o(a) próprio(a) supervisor(a)' : esc(S.responsavel.nome)}</td></tr></table></div>
+  <div class="card"><h3 class="sec-h">Recesso (art. 13)</h3>${rc ? `<div class="grid2"><div class="item"><span class="lbl">Direito</span><b>${esc(rc.direito)} dias</b></div><div class="item"><span class="lbl">Gozados</span><b>${esc(rc.gozados)} dias</b></div><div class="item"><span class="lbl">Saldo</span><b>${esc(rc.saldo)} dias</b></div></div><span class="mut">${esc(rc.periodo)} ${esc(rc.obs)} · atualizado em ${br(rc.atualizadoEm)}</span>` : '<span class="mut">Saldo ainda não lançado pela regional.</span>'}
+    <span class="mut">Recesso de 30 dias a cada ano de estágio, proporcional se o estágio durar menos de um ano, gozado preferencialmente nas férias escolares e remunerado.</span></div>
+  <div class="card"><h3 class="sec-h">Solicitar recesso</h3><span class="mut">O pedido vai para o supervisor de estágio e o responsável local confirmarem e, depois, para a regional fazer a solicitação.</span>
+    <div class="grid2"><label class="f">De<input type="date" id="rcIni"></label><label class="f">Até<input type="date" id="rcFim"></label><label class="f">Dias<input type="number" id="rcDias" min="1"></label></div>
+    <label class="f">Observação<input id="rcTxt" placeholder="Ex.: férias da faculdade"></label><button class="gold" id="rcBtn">Solicitar recesso</button>
+    <div class="list">${S.solicitacoes.filter(x => x.tipo === 'Recesso').map(x => solItem(x, 'est')).join('')}</div></div>
+  <div class="card"><h3 class="sec-h">Documentos (TCE, aditivos, manual)</h3><div class="list">${docs.map(d => `<a class="item" href="${esc(d.url)}" target="_blank" style="text-decoration:none;color:inherit"><b>${esc(d.nome)}</b><span class="mut">${esc(d.tipo)} · ${br(d.ts)} · enviado por ${esc(d.enviadoPor)}</span></a>`).join('') || '<span class="mut">Nenhum documento.</span>'}</div></div>
+  <div class="card"><h3 class="sec-h">Enviar documento</h3>
+    <label class="f">Tipo<select id="dTipo"><option>Calendário escolar</option><option>Atestado médico</option><option>Declaração de prova</option><option>Comprovante de matrícula</option><option>Outro</option></select></label>
+    ${fileField('dArq', 'Documento')}<button class="gold" id="dBtn">Enviar</button></div>
+  <div class="card"><h3 class="sec-h">Chamados</h3>
+    <label class="f">Para<select id="hPara"><option>Regional (concedente)</option><option>Supervisor de estágio</option>${S.responsavel.mesmo ? '' : '<option>Responsável local</option>'}</select></label>
+    <label class="f">Assunto<input id="hAss"></label><label class="f">Mensagem<textarea id="hTxt"></textarea></label><button class="gold" id="hBtn">Abrir chamado</button>
+    <div class="list">${S.chamados.map(chamadoItem).join('')}</div></div>`;
+}
+function chamadoItem(c, canAnswer) {
+  return `<div class="item"><div class="row sp"><b>${esc(c.assunto)}</b><span class="pill ${c.status === 'Respondido' ? 'ok' : 'warn'}">${esc(c.status)}</span></div>
+  <span class="mut">${who(c.estId, c.nome, 1)} → ${esc(c.para)} · ${brts(c.ts)}</span><span>${esc(c.texto)}</span>
+  ${c.resposta ? `<div class="item gold"><span class="mut">Resposta de ${esc(c.respPor)} · ${brts(c.respEm)}</span>${esc(c.resposta)}</div>` : ''}
+  ${canAnswer && !c.resposta ? `<textarea data-resp="${c.id}" placeholder="Responder"></textarea><button class="sm gold" data-respb="${c.id}">Responder</button>` : ''}</div>`;
+}
+
+function bindEst() {
+  document.querySelectorAll('[data-go]').forEach(b => b.onclick = () => { TAB = b.dataset.go; render(); });
+  document.querySelectorAll('[data-ck]').forEach(b => b.onclick = () => checkin(b.dataset.ck));
+  bindSol(); tickClock();
+  document.querySelectorAll('[data-pgok],[data-pgno]').forEach(b => b.onclick = e => {
+    const id = b.dataset.pgok || b.dataset.pgno, obs = (document.querySelector(`[data-pgobs="${id}"]`) || {}).value || '';
+    if (b.dataset.pgno && !obs.trim()) return toast('Explique o que aconteceu.');
+    act(e.target, 'pagamento', { id, recebido: !!b.dataset.pgok, obs: obs.trim() }, b.dataset.pgok ? 'Recebimento confirmado.' : 'Informação enviada à regional.');
+  });
+  const cf = $('#crFoto'); if (cf) cf.onchange = async ev => { try { const f = await foto3x4(ev.target.files[0]); await act(null, 'foto', { foto: f }, 'Foto enviada para aprovação do responsável local.'); } catch (x) { toast(x.message); } };
+  const cp = $('#crPed'); if (cp) cp.onclick = e => { if (!$('#crMot').value.trim()) return toast('Informe o motivo.'); act(e.target, 'pedirTrocaFoto', { motivo: $('#crMot').value.trim() }, 'Solicitação enviada à regional.'); };
+  const cd = $('#crDados'); if (cd) cd.onclick = e => act(e.target, 'dados', { rg: $('#crRg').value, cpf: $('#crCpf').value }, 'Dados salvos.');
+  const cfull = $('#crFull'); if (cfull) cfull.onclick = () => {
+    const d = document.createElement('div'); d.className = 'ov cr-ov'; d.innerHTML = crachaHtml() + '<button class="ghost" style="color:#fff;border-color:#555">Fechar</button>';
+    d.onclick = () => d.remove(); document.body.appendChild(d); tickClock();
+    try { navigator.wakeLock && navigator.wakeLock.request('screen').catch(() => {}); } catch (x) {}
+  };
+  const pr = $('#prBtn'); if (pr) pr.onclick = async e => {
+    let m; try { m = await fileToB64(pickFile('prMat'), 1600); } catch (x) { return toast('Anexe o comprovante de matrícula.'); }
+    act(e.target, 'solicitar', { tipo: 'Prorrogação', matricula: m, texto: $('#prTxt').value.trim() }, 'Interesse registrado. Aguarde as confirmações.');
+  };
+  const rc = $('#rcBtn'); if (rc) rc.onclick = e => {
+    if (!$('#rcIni').value || !$('#rcFim').value || !$('#rcDias').value) return toast('Informe o período e os dias.');
+    act(e.target, 'solicitar', { tipo: 'Recesso', ini: $('#rcIni').value, fim: $('#rcFim').value, dias: $('#rcDias').value, texto: $('#rcTxt').value.trim() }, 'Pedido de recesso enviado.');
+  };
+  document.querySelectorAll('[data-csup]').forEach(b => b.onclick = e => act(e.target, 'cienteSupervisao', { id: b.dataset.csup }, 'Agendamento confirmado.'));
+  const cb = $('#cBtn'); if (cb) cb.onclick = async e => {
+    const f = pickFile('cArq'); let anexo = null;
+    try { if (f) anexo = await fileToB64(f, 1400); } catch (x) { return toast(x.message); }
+    if (!$('#cMot').value.trim()) return toast('Informe o motivo.');
+    if (await act(e.target, 'comunicar', { tipo: $('#cTipo').value, data: $('#cData').value, hIni: $('#cIni').value, hFim: $('#cFim').value, motivo: $('#cMot').value.trim(), anexo }, 'Comunicação enviada.')) TAB = 'ausencias';
+  };
+  const db = $('#dBtn'); if (db) db.onclick = async e => {
+    let a; try { a = await fileToB64(pickFile('dArq'), 1600); } catch (x) { return toast(x.message); }
+    await act(e.target, 'documento', { tipo: $('#dTipo').value, b64: a.b64, mime: a.mime }, 'Documento enviado.');
+  };
+  const hb = $('#hBtn'); if (hb) hb.onclick = e => {
+    if (!$('#hAss').value.trim() || !$('#hTxt').value.trim()) return toast('Preencha assunto e mensagem.');
+    act(e.target, 'chamado', { para: $('#hPara').value, assunto: $('#hAss').value.trim(), texto: $('#hTxt').value.trim() }, 'Chamado aberto.');
+  };
+  document.querySelectorAll('[data-rel],[data-relv]').forEach(b => b.onclick = () => {
+    const r = S.relatorios.find(x => x.id === (b.dataset.rel || b.dataset.relv));
+    const o = overlay(relHtml(r) + (b.dataset.rel ? `<div class="card" style="border-color:var(--ouro)"><b>Ciência do(a) estagiário(a)</b>
+      <label class="row" style="font-weight:600;flex-wrap:nowrap"><input type="checkbox" id="rVer" style="width:auto"> Li e verifiquei todo o relatório.</label>
+      <label class="f">Sua manifestação (obrigatória)<textarea id="rMan" placeholder="Ex.: Concordo com o relatório. / Discordo do item… porque…"></textarea></label><label class="f">Local<input id="rLoc" placeholder="Ex.: São Paulo"></label>
+      <div class="mut">Data e hora são registradas automaticamente.</div><button class="gold big" id="rOk">Ciente do relatório de ${mesNome(r.mes)}</button></div>` : '') + `<button class="ghost" onclick="closeOv()">Fechar</button>`);
+    const ok = o.querySelector('#rOk'); if (ok) ok.onclick = async e => {
+      if (!o.querySelector('#rVer').checked) return toast('Confirme que leu e verificou o relatório.');
+      if (!o.querySelector('#rMan').value.trim()) return toast('Escreva sua manifestação.');
+      if (!o.querySelector('#rLoc').value.trim()) return toast('Informe o local.');
+      if (await act(e.target, 'cienteRelatorio', { id: r.id, verificado: true, local: o.querySelector('#rLoc').value.trim(), manif: o.querySelector('#rMan').value.trim() }, 'Ciência registrada.')) closeOv();
+    };
+  });
+}
+
+async function checkin(tipo) {
+  const g = await gpsGet();
+  if (g.err === 'bloqueado') { try { localStorage.removeItem('srpma_gps'); } catch (e) {} return gpsBlocked(() => checkin(tipo)); }
+  let gpsTxt = g.err ? 'indisponível' : 'ok';
+  if (g.err && !checkin.retried) { checkin.retried = true; return overlay(`<h2>Localização não encontrada</h2><p class="mut">Confira se a Localização do celular está ligada e tente de novo. Em local fechado, chegue perto de uma janela.</p>
+    <button class="gold big" onclick="closeOv();checkin('${tipo}')">Tentar de novo</button>`); }
+  checkin.retried = false;
+  if (g.err) {
+    const o = overlay(`<h2>Registrar ${tipo.toLowerCase()} sem localização?</h2><p class="mut">A localização continua indisponível. O registro será marcado para conferência da regional.</p>
+      <button class="gold big" id="ckSend">Registrar mesmo assim</button><button class="ghost" onclick="closeOv()">Cancelar</button>`);
+    o.querySelector('#ckSend').onclick = async e => { if (await act(e.target, 'checkin', { tipo, gps: gpsTxt }, tipo + ' registrada.')) closeOv(); };
+    return;
+  }
+  await act(null, 'checkin', { tipo, lat: g.lat, lng: g.lng, acc: g.acc, gps: gpsTxt }, tipo + ' registrada às ' + new Date().toTimeString().slice(0, 5) + '.');
+}
+
+/* ---------- prorrogação e recesso ---------- */
+function solItem(x, papel) {
+  const st = (v, quem) => v ? (/^Não concorda/.test(v) ? `<span class="pill bad">${quem}: não concorda</span>` : `<span class="pill ok">${quem} ✓</span>`) : `<span class="pill warn">${quem}: pendente</span>`;
+  const meu = papel === 'est' ? x.estOk : papel === 'sup' ? x.supOk : papel === 'loc' ? x.locOk : 'x';
+  const pode = papel && papel !== 'reg' && !meu && /^Aguardando/.test(x.status) && !(papel === 'loc' && x.locNA);
+  return `<div class="item gold"><div class="row sp"><span class="row">${av(x.estId, x.nome)}<b>${x.tipo === 'Recesso' ? 'Recesso' : 'Prorrogação do TCE'} · ${esc(x.nome)}</b></span><span class="pill ${/CIEE|Encaminh|Conclu/.test(x.status) ? 'ok' : /Não|Indefer/.test(x.status) ? 'bad' : 'warn'}">${esc(x.status.replace('Aguardando regional', 'Aguardando concedente'))}</span></div>
+    <span class="mut">Aberto por ${esc(x.origem)} em ${brts(x.ts)}${x.tipo === 'Recesso' ? ` · ${br(x.ini)} a ${br(x.fim)} (${esc(x.dias)} dias)` : ''}</span>${x.texto ? `<span>${esc(x.texto)}</span>` : ''}
+    ${x.matriculaUrl ? `<a href="${esc(x.matriculaUrl)}" target="_blank">Comprovante de matrícula ↗</a>` : ''}
+    <div class="row">${st(x.estOk, 'Estagiário')}${st(x.supOk, 'Supervisor')}${x.locNA ? '<span class="pill">Resp. local: não se aplica</span>' : st(x.locOk, 'Resp. local')}${concPill(x)}</div>
+    ${pode ? `<input data-solobs="${x.id}" placeholder="Observação (opcional)"><div class="row"><button class="sm gold" data-solok="${x.id}">${x.tipo === 'Recesso' ? 'Confirmo o recesso' : 'Confirmo o interesse na prorrogação'}</button><button class="sm ghost" data-solno="${x.id}">Não concordo</button></div>` : ''}</div>`;
+}
+/* Situação do pedido no concedente (regional), sempre visível para todos os perfis. */
+function concPill(x) {
+  const s = x.status || '';
+  if (/Indeferid/.test(s)) return `<span class="pill bad">Concedente: indeferido${x.obs ? ' – ' + esc(x.obs) : ''}</span>`;
+  if (/emitido|aprovado/.test(s)) return `<span class="pill ok">Concedente: ${esc(s)}</span>`;
+  if (/solicitado ao CIEE/.test(s)) return `<span class="pill ok">Concedente: ${esc(s)} em ${br(x.regOk)}</span>`;
+  if (s === 'Aguardando regional') return '<span class="pill warn">Concedente: em análise</span>';
+  if (/Não confirmado/.test(s)) return '<span class="pill bad">Concedente: não encaminhado (falta confirmação)</span>';
+  return '<span class="pill">Concedente: aguardando as confirmações</span>';
+}
+function bindSol() {
+  document.querySelectorAll('[data-solok],[data-solno]').forEach(b => b.onclick = e => {
+    const id = b.dataset.solok || b.dataset.solno, obs = (document.querySelector(`[data-solobs="${id}"]`) || {}).value || '';
+    if (b.dataset.solno && !obs.trim()) return toast('Explique o motivo na observação.');
+    act(e.target, 'confirmarSol', { id, concordo: !b.dataset.solno, obs: obs.trim() }, 'Confirmação registrada.');
+  });
+}
+const TXT_PRORROG = 'Para prorrogar, o estagiário manifesta interesse e envia o comprovante de matrícula atualizado; o supervisor de estágio e o responsável local confirmam; a regional solicita o termo aditivo ao CIEE antes do fim do TCE. O estágio na mesma concedente não pode passar de 2 anos, exceto para pessoa com deficiência (Lei 11.788/2008, art. 11).';
+
+/* ---------- relatório: visualização ---------- */
+function relHtml(r) {
+  const d = r.dados || {}, R = S.rel;
+  let h = `<span class="lbl">Relatório mensal de supervisão de estágio</span><div class="row">${av(r.estId, r.estNome, 'lg')}<h2>${esc(r.estNome)} · ${mesNome(r.mes)}</h2></div><span class="mut">CPMA ${esc(r.central)}</span>`;
+  h += `<h3 class="sec-h">Frequência</h3><table>${R.freq.map(f => `<tr><td>${f[1]}</td><td>${esc((d.freq || {})[f[0]])}</td></tr>`).join('')}</table>`;
+  R.sec.forEach(s => {
+    if (s.id === 's3') h += `<h3 class="sec-h">Atividades</h3><p>${esc(d.atividades)}</p>${d.foraPlano ? `<p class="mut">Fora do plano: ${esc(d.foraPlano)}</p>` : ''}`;
+    h += `<h3 class="sec-h">${s.titulo}</h3><table>${s.itens.map((t, i) => { const v = (d.yn || {})[s.id + '_' + i]; return `<tr><td>${t}</td><td><b>${v === 'S' ? 'Sim' : v === 'N' ? 'Não' : '—'}</b></td></tr>`; }).join('')}</table>${d['obs_' + s.id] ? `<p class="mut">${esc(d['obs_' + s.id])}</p>` : ''}`;
+    if (s.id === 's3') h += `<h3 class="sec-h">4. Avaliação de desempenho</h3><table>${R.conceitos.map((c, i) => `<tr><td>${c}</td><td><b>${esc((d.conc || {})['c' + i])}</b></td><td class="mut">${esc((d.conc || {})['j' + i])}</td></tr>`).join('')}</table><p><b>Pontos fortes:</b> ${esc(d.fortes)}</p><p><b>A desenvolver:</b> ${esc(d.desenvolver)}</p>`;
+    if (s.id === 's5') h += `${d.saude ? `<p>${esc(d.saude)}</p>` : ''}<h3 class="sec-h">6. Ocorrências</h3><p>${esc(d.ocorrencias) || 'Sem ocorrências.'}</p>`;
+    if (s.id === 's7') h += `<p><b>Fundamentação:</b> ${esc(d.fundamentacao)}</p>`;
+  });
+  h += `<h3 class="sec-h">8. Ciência</h3><table><tr><td>Supervisor(a)</td><td>${brts(r.supCiente)} · ${esc(r.supLocal)}</td></tr><tr><td>Estagiário(a)</td><td>${brts(r.estCiente)} · ${esc(r.estLocal)}</td></tr>${r.locCiente ? `<tr><td>Responsável local (${esc(r.locNome)})</td><td>${brts(r.locCiente)} · ${esc(r.locLocal)}</td></tr>` : ''}<tr><td>Regional</td><td>${brts(r.regCiente)} · ${esc(r.regLocal)}</td></tr></table>${r.estManif ? `<p class="mut">Manifestação do estagiário: ${esc(r.estManif)}</p>` : ''}${r.locObs ? `<p class="mut">Manifestação do responsável local: ${esc(r.locObs)}</p>` : ''}`;
+  return h;
+}
+
+/* ============================== SERVIDOR (SUPERVISOR / RESPONSÁVEL LOCAL) ============================== */
+function renderPes() {
+  const P = S.papeis;
+  $('#sub').textContent = S.nome;
+  if (!TAB) TAB = 'hoje';
+  const tabs = [['hoje','Hoje',IC.team],['ausencias','Ausências',IC.cal]];
+  if (P.sup) tabs.push(['supervisao','Supervisão',IC.vid]);
+  tabs.push(['pedidos','Pedidos',IC.doc],['chamados','Chamados',IC.chat]);
+  tabbar(tabs);
+  const v = { hoje: pesHoje, ausencias: pesAusencias, supervisao: pesSupervisao, chamados: pesChamados, pedidos: pesPedidos }[TAB]();
+  $('#app').innerHTML = papelCard() + v; bindPes();
+}
+function papelCard() {
+  const P = S.papeis, nS = S.equipe.filter(e => e.papel === 'sup').length, nL = S.equipe.filter(e => e.papel === 'loc').length;
+  return `<div class="card"><span class="lbl">Seu acesso</span><div class="row">
+    ${P.sup ? `<span class="pill gold">Supervisor(a) de estágio · ${nS} estagiário(s)</span>` : ''}
+    ${P.loc ? `<span class="pill">Responsável local · CPMA ${esc(P.centrais.join(', '))}${nL ? ' · ' + nL + ' estagiário(s) de outros supervisores' : ''}</span>` : ''}</div>
+    <span class="mut">${P.sup ? 'Com os seus supervisionados você faz a supervisão mensal e o relatório. ' : ''}${P.loc && nL ? 'Os demais estagiários da CPMA aparecem só para acompanhamento local (frequência, ausências e chamados); a supervisão deles é do supervisor de estágio de cada um.' : ''}</span></div>`;
+}
+function equipeItem(e) {
+  // Entrada e saída aparecem para supervisor e responsável local; só o responsável local confirma.
+  const ent = e.entrada ? `<span class="pill ${+e.atraso > 0 ? 'warn' : 'ok'}">Entrada ${e.entrada}${+e.atraso > 0 ? ' · ' + e.atraso + ' min' : ''}</span>${ckPill(e.enConf || {})}` : `<span class="pill bad">Sem entrada</span>`;
+  const sai = e.saida ? `<span class="pill">Saída ${e.saida}</span>${ckPill(e.saConf || {})}` : '';
+  return `<div class="item"><div class="row sp">${who(e.id, e.nome)}</div><div class="row">${ent}${sai}</div>
+  <span class="mut">${esc(e.curso)} · ${esc(e.horario)}${e.papel === 'loc' ? ' · Supervisor(a): ' + esc(e.supervisor) : ''}</span>
+  <span class="mut">Tel. ${esc(e.telefone)} · TCE até ${br(e.fim) || '—'}</span></div>`;
+}
+function supItemPes(s) {
+  const loc = s.locNA ? '<span class="pill">Ciência do responsável local: não se aplica (o supervisor é o responsável local)</span>'
+    : s.locCiente ? `<span class="pill ok">Responsável local ciente</span>` : (s.papel === 'loc' ? `<button class="sm gold" data-lsup="${s.id}">Ciente</button>` : '<span class="pill warn">Responsável local: pendente</span>');
+  return `<div class="item"><div class="row sp">${who(s.estId, s.nome)}<span class="mut">${br(s.data)} às ${esc(s.hora)}</span></div>
+    <div class="row">${s.estCiente ? '<span class="pill ok">Estagiário confirmou</span>' : '<span class="pill warn">Estagiário: pendente</span>'}${loc}</div>
+    ${s.papel === 'loc' ? '<span class="mut">Supervisão marcada pelo supervisor de estágio, no horário de estágio. Dê ciente para organizar a rotina da CPMA.</span>' : ''}
+    ${s.link && s.papel === 'sup' ? `<a href="${esc(s.link)}" target="_blank">Abrir videochamada ↗</a>` : ''}</div>`;
+}
+function pesHoje() {
+  const sup = S.equipe.filter(e => e.papel === 'sup'), loc = S.equipe.filter(e => e.papel === 'loc');
+  const agLoc = S.supervisoes.filter(s => s.papel === 'loc' && s.data >= S.hoje);
+  const relLoc = S.relatorios.filter(r => r.papel === 'loc' && r.status === 'Aguardando responsável local');
+  const fotos = S.equipe.filter(e => e.fotoPend);
+  const ckp = S.checkinsPend || [];
+  return (ckp.length ? `<div class="card" style="border-color:var(--ouro)"><div class="row sp"><h2>Check-in e check-out para confirmar</h2><button class="sm gold" data-ckall="1">Confirmar todos (${ckp.length})</button></div>
+    <span class="mut">Como responsável local, só você confirma o check-in (entrada) e o check-out (saída), até o dia seguinte ao registro: confirme que o estagiário estava na CPMA no horário registrado. Se não estava, marque “Não confirmar” e explique.</span>
+    <div class="list">${ckp.map(c => `<div class="item"><div class="row sp">${who(c.estId, c.nome)}<span class="mut">${brts(c.ts)}</span></div>
+      <div class="row"><span class="pill">${esc(c.tipo)}</span>${+c.atraso > 0 ? `<span class="pill warn">${c.atraso} min de atraso</span>` : ''}${c.lat ? `<a href="https:\/\/www.google.com/maps?q=${c.lat},${c.lng}" target="_blank">ver no mapa</a>` : `<span class="pill bad">sem localização</span>`}</div>
+      <input data-ckobs="${c.id}" placeholder="Motivo, se não confirmar"><div class="row"><button class="sm gold" data-ckok="${c.id}">Confirmar</button><button class="sm ghost" data-ckno="${c.id}">Não confirmar</button></div></div>`).join('')}</div></div>` : '') + (fotos.length ? `<div class="card" style="border-color:var(--ouro)"><h2>Fotos do crachá para aprovar</h2><span class="mut">Confira se é o próprio estagiário, de rosto, de frente, fundo claro e sem óculos escuros nem boné. Como responsável local, a foto só entra no crachá depois da sua aprovação.</span>
+    <div class="list">${fotos.map(e => `<div class="item"><div class="row" style="flex-wrap:nowrap;align-items:flex-start"><img src="${e.fotoPend}" style="width:90px;height:120px;object-fit:cover;border-radius:6px;border:2px solid var(--ouro)">
+      <div style="display:grid;gap:6px;flex:1;min-width:0"><b>${esc(e.nome)}</b>${e.foto ? `<span class="mut">Substitui a foto atual</span>` : ''}<input data-fobs="${e.id}" placeholder="Motivo, se recusar">
+      <div class="row"><button class="sm gold" data-fok="${e.id}">Aprovar</button><button class="sm ghost" data-fno="${e.id}">Recusar</button></div></div></div></div>`).join('')}</div></div>` : '') + (relLoc.length ? `<div class="card" style="border-color:var(--ouro)"><h2>Relatórios mensais para sua ciência</h2><span class="mut">O supervisor de estágio e o estagiário já deram Ciente. Verifique e dê o seu Ciente como responsável local; depois o relatório segue para a regional.</span>
+    <div class="list">${relLoc.map(r => `<div class="item"><div class="row sp">${av(r.estId, r.estNome)}<b>${esc(r.estNome)} · ${mesNome(r.mes)}</b>${statusPill(r.status)}</div><button class="sm gold" data-rloc="${r.id}">Ler e dar Ciente</button></div>`).join('')}</div></div>` : '') + (agLoc.length ? `<div class="card"><h2>Supervisões marcadas na CPMA</h2><span class="mut">Como responsável local, confirme que está ciente das supervisões dos estagiários de outros supervisores.</span><div class="list">${agLoc.map(supItemPes).join('')}</div></div>` : '') + (sup.length ? `<div class="card"><h2>Meus supervisionados</h2><span class="mut">Você é o(a) supervisor(a) de estágio destes estagiários.</span><div class="list">${sup.map(equipeItem).join('')}</div></div>` : '') +
+    (loc.length ? `<div class="card"><h2>Outros estagiários da CPMA</h2><span class="mut">Acompanhamento como responsável local. A supervisão de estágio é de outro servidor.</span><div class="list">${loc.map(equipeItem).join('')}</div></div>` : '') +
+    ((S.aIniciar || []).length ? `<div class="card"><h3 class="sec-h">Estagiários que ainda vão começar</h3><span class="mut">Entram na frequência a partir do início da vigência do TCE.</span><div class="list">${S.aIniciar.map(e => `<div class="item"><div class="row sp">${who(e.id, e.nome)}<span class="pill gold">Inicia em ${br(e.inicio)}</span></div><span class="mut">${esc(e.horario)}</span></div>`).join('')}</div></div>` : '') +
+    (S.avisos.length ? `<div class="card"><h3 class="sec-h">Avisos</h3><div class="list">${S.avisos.map(avisoItem).join('')}</div></div>` : '') +
+    `<div class="card"><h3 class="sec-h">Registros dos últimos 7 dias</h3><div class="tw"><table><tr><th>Data</th><th>Estagiário</th><th>Tipo</th><th>GPS</th><th>Confirmação</th></tr>${S.checkins7.map(c => `<tr><td>${brts(c.ts)}</td><td>${who(c.estId, c.nome, 1)}</td><td>${esc(c.tipo)}${+c.atraso > 0 ? ' · ' + c.atraso + ' min' : ''}</td><td>${esc(c.gps)}</td><td>${ckPill(c)}</td></tr>`).join('')}</table></div></div>`;
+}
+function pesAusencias() {
+  return `<div class="card"><h2>Ausências, atrasos e saídas comunicadas</h2><div class="list">${S.comunicacoes.map(c => {
+    const ciente = c.papel === 'sup' ? c.supCiente : c.locCiente;
+    return `<div class="item"><div class="row sp">${who(c.estId, c.nome)}<span class="pill">${esc(c.tipo)}</span></div><span>${br(c.data)} ${esc(c.hIni)}${c.hFim ? '–' + esc(c.hFim) : ''} · ${esc(c.motivo)}</span>
+    <span class="mut">${c.papel === 'sup' ? 'Seu supervisionado' : 'Acompanhamento local'} · enviada em ${brts(c.ts)}${c.anexoUrl ? ' · com comprovante (na regional)' : ''}</span>
+    ${ciente ? `<span class="pill ok">Ciente em ${esc(ciente)}</span>` : `<button class="sm gold" data-cc="${c.id}">Ciente</button>`}</div>`; }).join('') || '<span class="mut">Nenhuma comunicação.</span>'}</div></div>`;
+}
+function pesSupervisao() {
+  const sup = S.equipe.filter(e => e.papel === 'sup');
+  const mesAnt = (() => { const [y, m] = S.mesAtual.split('-').map(Number); const d = new Date(y, m - 2, 1); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0'); })();
+  return `<div class="card"><h2>Marcar supervisão mensal (videochamada)</h2>
+    <label class="f">Estagiário(a)<select id="aEst">${sup.map(e => `<option value="${e.id}">${esc(e.nome)} (${esc(e.horario)})</option>`).join('')}</select></label>
+    <div class="grid2"><label class="f">Data<input type="date" id="aData"></label><label class="f">Hora<input type="time" id="aHora"></label></div>
+    <label class="f">Link da videochamada (Teams, Meet ou WhatsApp)<input id="aLink" placeholder="https:\/\/"></label><label class="f">Observação<input id="aObs"></label>
+    <button class="gold" id="aBtn">Marcar e avisar o estagiário</button>
+    <span class="mut">Sempre dentro do horário de estágio. O estagiário confirma com Ciente. O responsável local da CPMA também dá ciente, exceto quando você mesmo(a) é o responsável local.</span>
+    <div class="list">${S.supervisoes.filter(s => s.papel === 'sup' && s.data >= S.hoje).map(supItemPes).join('')}</div></div>
+  <div class="card"><h2>Relatório mensal de supervisão</h2>${relPendHtml(sup, mesAnt)}<span class="mut">Prazo: até o <b>dia 10 do mês seguinte</b> ao mês de estágio, com base na folha de frequência (no período de testes do aplicativo, a folha de frequência em papel continua valendo). Depois de concluído, segue para o estagiário (manifestação e Ciente), depois para o responsável local da CPMA (Ciente) e, por fim, para a regional.</span>
+    <div class="grid2"><label class="f">Estagiário(a)<select id="fEst">${sup.map(e => `<option value="${e.id}">${esc(e.nome)}</option>`).join('')}</select></label>
+    <label class="f">Mês de referência<input type="month" id="fMes" value="${mesAnt}"></label></div>
+    <button class="gold" id="fOpen">Abrir relatório</button>
+    <div class="list">${S.relatorios.map(r => `<div class="item"><div class="row sp">${av(r.estId, r.estNome)}<b>${esc(r.estNome)} · ${mesNome(r.mes)}</b>${statusPill(r.status)}</div><button class="ghost sm" data-rv="${r.id}">Ver</button></div>`).join('')}</div></div>`;
+}
+function pesPedidos() {
+  const sup = S.equipe.filter(e => e.papel === 'sup');
+  const pend = S.solicitacoes.filter(x => /^Aguardando/.test(x.status) && !(x.papel === 'sup' ? x.supOk : (x.locNA || x.locOk)));
+  return `<div class="card"><h2>Prorrogação e recesso</h2><span class="mut">${TXT_PRORROG}</span></div>
+  ${S.alertasTce.length ? `<div class="card" style="border-color:var(--bad)"><h3 class="sec-h">TCE terminando em até 45 dias</h3><div class="list">${S.alertasTce.map(a => `<div class="item">${who(a.id, a.nome)}<span class="mut">Termina em ${br(a.fim)} · faltam ${a.dias} dias${S.solicitacoes.some(x => x.estId === a.id && x.tipo === 'Prorrogação') ? ' · pedido de prorrogação aberto' : ' · aguardando o estagiário manifestar interesse'}</span></div>`).join('')}</div></div>` : ''}
+  ${pend.length ? `<div class="card"><h3 class="sec-h">Aguardando a sua confirmação</h3><div class="list">${pend.map(x => solItem(x, x.papel)).join('')}</div></div>` : ''}
+  ${sup.length ? `<div class="card"><h3 class="sec-h">Solicitar recesso para supervisionado</h3>
+    <label class="f">Estagiário(a)<select id="srEst">${sup.map(e => `<option value="${e.id}">${esc(e.nome)}</option>`).join('')}</select></label>
+    <div class="grid2"><label class="f">De<input type="date" id="srIni"></label><label class="f">Até<input type="date" id="srFim"></label><label class="f">Dias<input type="number" id="srDias" min="1"></label></div>
+    <label class="f">Observação<input id="srTxt"></label><span class="mut">O estagiário e o responsável local confirmam; depois o pedido chega à regional.</span><button class="gold" id="srBtn">Solicitar recesso</button></div>` : ''}
+  <div class="card"><h3 class="sec-h">Todos os pedidos</h3><div class="list">${S.solicitacoes.map(x => solItem(x, null)).join('') || '<span class="mut">Nenhum pedido.</span>'}</div></div>`;
+}
+/* Relatórios do mês anterior ainda não concluídos pelo supervisor (prazo: dia 10). */
+function relPendHtml(sup, mesAnt) {
+  const falta = sup.filter(e => !S.relatorios.some(r => r.estId === e.id && r.mes === mesAnt && r.status !== 'Rascunho'));
+  if (!falta.length || mesAnt < S.inicioApp) return '';
+  const dia = +S.hoje.slice(8, 10), atrasado = dia > 10;
+  return `<div class="item" style="border-color:${atrasado ? 'var(--bad)' : 'var(--ouro)'}"><b>${atrasado ? 'Atrasado' : 'Pendente'}: relatório de ${mesNome(mesAnt)} (prazo dia 10)</b>${falta.map(e => `<span>${who(e.id, e.nome, 1)}</span>`).join('')}</div>`;
+}
+function pesChamados() {
+  return `<div class="card"><h2>Chamados dos estagiários</h2><div class="list">${S.chamados.map(c => chamadoItem(c, true)).join('') || '<span class="mut">Nenhum chamado.</span>'}</div></div>`;
+}
+function bindLocal() {
+  document.querySelectorAll('[data-ckok],[data-ckno]').forEach(b => b.onclick = e => {
+    const id = b.dataset.ckok || b.dataset.ckno, obs = (document.querySelector(`[data-ckobs="${id}"]`) || {}).value || '';
+    if (b.dataset.ckno && !obs.trim()) return toast('Informe o motivo.');
+    act(e.target, 'confirmarCheckin', { ids: [id], confirmar: !!b.dataset.ckok, obs: obs.trim() }, b.dataset.ckok ? 'Check-in confirmado.' : 'Registrado como não confirmado.');
+  });
+  document.querySelectorAll('[data-ckall]').forEach(b => b.onclick = e => act(e.target, 'confirmarCheckin', { ids: (S.checkinsPend || (S.local || {}).checkinsPend || []).map(c => c.id), confirmar: true }, 'Check-ins confirmados.'));
+  document.querySelectorAll('[data-fok],[data-fno]').forEach(b => b.onclick = e => {
+    const id = b.dataset.fok || b.dataset.fno, obs = (document.querySelector(`[data-fobs="${id}"]`) || {}).value || '';
+    if (b.dataset.fno && !obs.trim()) return toast('Informe o motivo da recusa.');
+    act(e.target, 'aprovarFoto', { id, aprovar: !!b.dataset.fok, obs: obs.trim() }, b.dataset.fok ? 'Foto aprovada.' : 'Foto recusada. O estagiário foi avisado.');
+  });
+  document.querySelectorAll('[data-rloc]').forEach(b => b.onclick = () => {
+    const r = S.relatorios.find(x => x.id === b.dataset.rloc);
+    const o = overlay(relHtml(r) + `<div class="card" style="border-color:var(--ouro)"><b>Ciência do(a) responsável local</b>
+      <label class="row" style="font-weight:600;flex-wrap:nowrap"><input type="checkbox" id="lVer" style="width:auto"> Li e verifiquei todo o relatório, inclusive a manifestação do estagiário.</label>
+      <label class="f">Sua manifestação (obrigatória)<textarea id="lObs" placeholder="Ex.: De acordo. A frequência confere com os check-ins confirmados."></textarea></label><label class="f">Local<input id="lLoc" placeholder="Ex.: São Paulo"></label>
+      <span class="mut">Data e hora são registradas automaticamente.</span><button class="gold big" id="lOk">Ciente do relatório de ${mesNome(r.mes)}</button></div><button class="ghost" onclick="closeOv()">Fechar</button>`);
+    o.querySelector('#lOk').onclick = async e => {
+      if (!o.querySelector('#lVer').checked) return toast('Confirme que leu e verificou o relatório.');
+      if (!o.querySelector('#lObs').value.trim()) return toast('Escreva sua manifestação.');
+      if (!o.querySelector('#lLoc').value.trim()) return toast('Informe o local.');
+      if (await act(e.target, 'cienteRelatorioLocal', { id: r.id, verificado: true, local: o.querySelector('#lLoc').value.trim(), obs: o.querySelector('#lObs').value.trim() }, 'Ciência registrada. O relatório seguiu para a regional.')) closeOv();
+    };
+  });
+  document.querySelectorAll('[data-lsup]').forEach(b => b.onclick = e => act(e.target, 'cienteSupervisao', { id: b.dataset.lsup }, 'Ciência registrada.'));
+}
+function bindPes() {
+  document.querySelectorAll('[data-cc]').forEach(b => b.onclick = e => act(e.target, 'cienteComunicacao', { id: b.dataset.cc }, 'Ciência registrada.'));
+  bindSol();
+  const sr = $('#srBtn'); if (sr) sr.onclick = e => {
+    if (!$('#srIni').value || !$('#srFim').value || !$('#srDias').value) return toast('Informe o período e os dias.');
+    act(e.target, 'solicitar', { estId: $('#srEst').value, tipo: 'Recesso', ini: $('#srIni').value, fim: $('#srFim').value, dias: $('#srDias').value, texto: $('#srTxt').value.trim() }, 'Pedido de recesso enviado.');
+  };
+  bindLocal();
+  bindResp();
+  const ab = $('#aBtn'); if (ab) ab.onclick = e => {
+    if (!$('#aData').value || !$('#aHora').value) return toast('Informe data e hora.');
+    act(e.target, 'agendar', { estId: $('#aEst').value, data: $('#aData').value, hora: $('#aHora').value, link: $('#aLink').value.trim(), obs: $('#aObs').value.trim() }, 'Supervisão marcada. O estagiário foi avisado.');
+  };
+  const fo = $('#fOpen'); if (fo) fo.onclick = () => relForm($('#fEst').value, $('#fMes').value);
+  document.querySelectorAll('[data-rv]').forEach(b => b.onclick = () => { const r = S.relatorios.find(x => x.id === b.dataset.rv);
+    if (r.status === 'Rascunho') return relForm(r.estId, r.mes); overlay(relHtml(r) + '<button class="ghost" onclick="closeOv()">Fechar</button>'); });
+}
+function bindResp() {
+  document.querySelectorAll('[data-respb]').forEach(b => b.onclick = e => {
+    const t = document.querySelector(`[data-resp="${b.dataset.respb}"]`).value.trim(); if (!t) return toast('Escreva a resposta.');
+    act(e.target, 'responder', { id: b.dataset.respb, resposta: t }, 'Resposta enviada.');
+  });
+}
+
+function relForm(estId, mes) {
+  if (!estId || !mes) return toast('Escolha o estagiário e o mês.');
+  const e = S.equipe.find(x => x.id === estId);
+  const old = S.relatorios.find(r => r.estId === estId && r.mes === mes);
+  if (old && old.status !== 'Rascunho') return overlay(relHtml(old) + '<button class="ghost" onclick="closeOv()">Fechar</button>');
+  const d = (old && old.dados) || {}, R = S.rel;
+  const coms = S.comunicacoes.filter(c => c.estId === estId && String(c.data).slice(0, 7) === mes);
+  const yn = (k) => { const v = (d.yn || {})[k]; return `<div class="yn"><label><input type="radio" name="${k}" value="S" ${v === 'S' ? 'checked' : ''}><span>Sim</span></label><label><input type="radio" name="${k}" value="N" ${v === 'N' ? 'checked' : ''}><span>Não</span></label></div>`; };
+  const ta = (k, l) => `<label class="f">${l}<textarea data-k="${k}">${esc(d[k])}</textarea></label>`;
+  let h = `<span class="lbl">Relatório mensal de supervisão de estágio</span><div class="row">${av(e.id, e.nome, 'lg')}<h2>${esc(e.nome)} · ${mesNome(mes)}</h2></div>
+    ${coms.length ? `<div class="item gold"><b>Comunicações do estagiário no mês</b>${coms.map(c => `<span class="mut">${br(c.data)} · ${esc(c.tipo)} ${esc(c.hIni)}${c.hFim ? '–' + esc(c.hFim) : ''} · ${esc(c.motivo)}</span>`).join('')}</div>` : ''}
+    <h3 class="sec-h">2. Frequência e jornada</h3>${R.freq.map(f => `<label class="f">${f[1]}<input data-f="${f[0]}" value="${esc((d.freq || {})[f[0]])}"></label>`).join('')}`;
+  R.sec.forEach(s => {
+    if (s.id === 's3') h += `<h3 class="sec-h">3. Atividades desenvolvidas</h3>${ta('atividades', R.textos[0][1])}${ta('foraPlano', R.textos[1][1])}`;
+    else if (s.id !== 's2') h += `<h3 class="sec-h">${s.titulo}</h3>`;
+    h += s.itens.map((t, i) => `<div class="q"><span>${t}</span>${yn(s.id + '_' + i)}</div>`).join('') + ta('obs_' + s.id, 'Observações (obrigatório se alguma resposta for Não)');
+    if (s.id === 's3') h += `<h3 class="sec-h">4. Avaliação de desempenho</h3><span class="mut">O = Ótimo · B = Bom · R = Regular · I = Insuficiente. R ou I exige justificativa.</span>` +
+      R.conceitos.map((c, i) => `<div class="q"><span>${c}</span><div class="row"><select data-c="c${i}" style="width:90px"><option></option>${['O','B','R','I'].map(o => `<option ${(d.conc || {})['c' + i] === o ? 'selected' : ''}>${o}</option>`).join('')}</select><input data-c="j${i}" placeholder="Justificativa" value="${esc((d.conc || {})['j' + i])}" style="flex:1;min-width:140px"></div></div>`).join('') +
+      ta('fortes', R.textos[2][1]) + ta('desenvolver', R.textos[3][1]);
+    if (s.id === 's5') h += ta('saude', R.textos[4][1]) + `<h3 class="sec-h">6. Ocorrências e providências</h3>` + ta('ocorrencias', R.textos[5][1]);
+    if (s.id === 's7') h += ta('fundamentacao', R.textos[6][1]);
+  });
+  h += `<div class="card" style="border-color:var(--ouro)"><b>Ciência do(a) supervisor(a)</b><label class="f">Local<input id="sLoc" placeholder="Ex.: São Paulo"></label><span class="mut">Data e hora são registradas automaticamente ao concluir.</span>
+    <button class="gold big" id="rConc">Concluir relatório e marcar Ciente</button></div><div class="row"><button class="ghost" id="rSave">Salvar rascunho</button><button class="ghost" onclick="closeOv()">Fechar</button></div>`;
+  const o = overlay(h);
+  const collect = () => {
+    const out = { freq: {}, yn: {}, conc: {} };
+    o.querySelectorAll('[data-f]').forEach(i => out.freq[i.dataset.f] = i.value.trim());
+    o.querySelectorAll('input[type=radio]:checked').forEach(i => out.yn[i.name] = i.value);
+    o.querySelectorAll('[data-c]').forEach(i => out.conc[i.dataset.c] = i.value.trim());
+    o.querySelectorAll('[data-k]').forEach(i => out[i.dataset.k] = i.value.trim());
+    return out;
+  };
+  o.querySelector('#rSave').onclick = async ev => { if (await act(ev.target, 'salvarRelatorio', { estId, mes, dados: collect() }, 'Rascunho salvo.')) closeOv(); };
+  o.querySelector('#rConc').onclick = async ev => {
+    const dd = collect(), tot = R.sec.reduce((a, s) => a + s.itens.length, 0);
+    if (Object.keys(dd.yn).length < tot) return toast('Marque Sim ou Não em todas as afirmações.');
+    const semObs = R.sec.filter(s => s.itens.some((t, i) => dd.yn[s.id + '_' + i] === 'N') && !dd['obs_' + s.id]);
+    if (semObs.length && !/7\./.test(semObs[0].titulo)) return toast('Preencha as observações de "' + semObs[0].titulo + '" (há resposta Não).');
+    if (R.conceitos.some((c, i) => /[RI]/.test(dd.conc['c' + i]) && !dd.conc['j' + i])) return toast('Justifique os conceitos R ou I.');
+    if (!dd.atividades) return toast('Descreva as atividades do mês.');
+    if (!o.querySelector('#sLoc').value.trim()) return toast('Informe o local.');
+    if (await act(ev.target, 'salvarRelatorio', { estId, mes, dados: dd, concluir: true, local: o.querySelector('#sLoc').value.trim() }, 'Relatório concluído e enviado ao estagiário.')) closeOv();
+  };
+}
+
+/* ============================== REGIONAL ============================== */
+function renderReg() {
+  $('#tabbar').hidden = true;
+  $('#sub').textContent = 'Painel da regional · ' + S.regional;
+  if (!TAB) TAB = 'hoje';
+  const tabs = [['hoje','Hoje'],['estagiarios','Estagiários e links'],['servidores','Supervisores e responsáveis'],['avisos','Avisos'],['ausencias','Ausências'],['chamados','Chamados'],['relatorios','Supervisão e relatórios'],['pedidos','Prorrogação e recesso'],['pagamentos','Pagamentos'],['recesso','Recesso'],['documentos','Documentos']];
+  const v = { hoje: regHoje, estagiarios: regEst, servidores: regServ, avisos: regAvisos, ausencias: regAus, chamados: regCham, relatorios: regRel, pedidos: regPed, pagamentos: regPag, recesso: regRec, documentos: regDocs }[TAB]();
+  $('#app').innerHTML = `<div class="rtabs">${tabs.map(t => `<button data-rt="${t[0]}" class="${TAB === t[0] ? 'on' : ''}">${t[1]}</button>`).join('')}</div>` + v;
+  document.querySelectorAll('[data-rt]').forEach(b => b.onclick = () => { TAB = b.dataset.rt; render(); });
+  bindReg();
+}
+const ativos = () => S.estagiarios.filter(e => !/^n[aã]o$/i.test(e.ativo));
+const vigentes = () => ativos().filter(e => e.vigencia === 'Vigente');
+function vigPill(e) { return e.vigencia === 'A iniciar' ? `<span class="pill gold">Inicia em ${br(e.inicio)}</span>` : e.vigencia === 'Encerrado' ? `<span class="pill bad">TCE encerrado em ${br(e.fim)}</span>` : ''; }
+function centralFilter(id) { return `<select id="${id}" style="max-width:280px"><option value="">Todas as centrais</option>${S.centrais.map(c => `<option ${SUBTAB === c ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select>`; }
+/* A regional como responsável local (estagiários lotados na Diretoria Regional, ex.: Eduarda). */
+function regLocal() {
+  const L = S.local || {};
+  if (!(L.estagiarios || []).length) return '';
+  const n = (L.checkinsPend || []).length + (L.supervisoes || []).length + (L.relatorios || []).length + (L.solicitacoes || []).length;
+  return `<div class="card" style="border-color:var(--ouro)"><div class="row sp"><h2>Você como responsável local</h2>${L.checkinsPend.length ? `<button class="sm gold" data-ckall="1">Confirmar todos (${L.checkinsPend.length})</button>` : ''}</div>
+    <span class="mut">Estagiários lotados na Diretoria Regional: ${L.estagiarios.map(e => esc(e.nome)).join(', ')}. Confirme o check-in e o check-out até o dia seguinte ao registro.</span>
+    ${n ? '' : '<span class="pill ok">Nada pendente</span>'}
+    <div class="list">${L.checkinsPend.map(c => `<div class="item"><div class="row sp">${who(c.estId, c.nome)}<span class="mut">${brts(c.ts)}</span></div>
+      <div class="row"><span class="pill">${esc(c.tipo)}</span>${+c.atraso > 0 ? `<span class="pill warn">${c.atraso} min de atraso</span>` : ''}${c.lat ? `<a href="https:\/\/www.google.com/maps?q=${c.lat},${c.lng}" target="_blank">ver no mapa</a>` : `<span class="pill bad">sem localização</span>`}</div>
+      <input data-ckobs="${c.id}" placeholder="Motivo, se não confirmar"><div class="row"><button class="sm gold" data-ckok="${c.id}">Confirmar</button><button class="sm ghost" data-ckno="${c.id}">Não confirmar</button></div></div>`).join('')}
+    ${L.supervisoes.map(supItemPes).join('')}
+    ${L.relatorios.map(r => `<div class="item"><div class="row sp">${who(r.estId, r.estNome)}${statusPill(r.status)}</div><span class="mut">Relatório de ${mesNome(r.mes)}</span><button class="sm gold" data-rloc="${r.id}">Ler e dar Ciente como responsável local</button></div>`).join('')}
+    ${L.solicitacoes.map(x => solItem(x, 'loc')).join('')}</div></div>`;
+}
+function regHoje() {
+  const L = vigentes().filter(e => !SUBTAB || e.central === SUBTAB);
+  const ini = ativos().filter(e => e.vigencia === 'A iniciar'), enc = ativos().filter(e => e.vigencia === 'Encerrado');
+  const n = L.length, ok = L.filter(e => e.entrada).length, late = L.filter(e => +e.atraso > 0).length;
+  const pgNao = S.pagamentos.filter(p => p.recebido === 'Não').length;
+  const mAnt = (() => { const [y, m] = S.mesAtual.split('-').map(Number); const d = new Date(y, m - 2, 1); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0'); })();
+  const relFalta = vigentes().filter(e => e.inicio <= mAnt + '-31' && !S.relatorios.some(r => r.estId === e.id && r.mes === mAnt)).length;
+  const pedReg = S.solicitacoes.filter(x => x.status === 'Aguardando regional').length;
+  const pendRel = S.relatorios.filter(r => r.status === 'Aguardando regional').length, cham = S.chamados.filter(c => c.status === 'Aberto' && /Regional/.test(c.para)).length;
+  const aus = S.comunicacoes.filter(c => !c.regCiente).length;
+  return regLocal() + `<div class="grid2"><div class="card"><span class="lbl">Entradas hoje</span><h2>${ok} de ${n}</h2></div><div class="card"><span class="lbl">Com atraso</span><h2>${late}</h2></div>
+    <div class="card"><span class="lbl">Ausências sem ciência</span><h2>${aus}</h2></div><div class="card"><span class="lbl">Relatórios p/ ciência</span><h2>${pendRel}</h2></div><div class="card"><span class="lbl">Chamados abertos</span><h2>${cham}</h2></div><div class="card"><span class="lbl">TCE ≤ 45 dias</span><h2>${S.alertasTce.length}</h2></div><div class="card"><span class="lbl">Pedidos p/ solicitar</span><h2>${pedReg}</h2></div>${mAnt >= S.inicioApp ? `<div class="card"><span class="lbl">Relatórios de ${mesNome(mAnt)} pendentes (prazo dia 10)</span><h2 style="color:${relFalta && +S.hoje.slice(8, 10) > 10 ? 'var(--bad)' : 'inherit'}">${relFalta}</h2></div>` : ''}<div class="card"><span class="lbl">Pagamento não recebido</span><h2 style="color:${pgNao ? 'var(--bad)' : 'inherit'}">${pgNao}</h2></div></div>
+  ${ini.length || enc.length ? `<div class="card"><h3 class="sec-h">Fora da vigência do TCE (não entram na frequência)</h3><div class="list">${ini.concat(enc).map(e => `<div class="item"><div class="row sp">${who(e.id, e.nome)}${vigPill(e)}</div><span class="mut">${esc(e.central)} · TCE ${br(e.inicio)} a ${br(e.fim) || '—'}</span></div>`).join('')}</div></div>` : ''}
+  <div class="card"><div class="row sp"><h2>Frequência de hoje · ${br(S.hoje)}</h2>${centralFilter('fc')}</div><div class="tw"><table><tr><th>Estagiário</th><th>Central</th><th>Horário</th><th>Entrada</th><th>Saída</th><th>Localização</th><th>Confirmação do responsável local</th></tr>
+  ${L.map(e => `<tr><td>${who(e.id, e.nome, 1)}</td><td>${esc(e.central)}</td><td>${esc(e.horario)}</td><td>${e.entrada ? (+e.atraso > 0 ? `<span class="pill warn">${e.entrada} · ${e.atraso} min</span>` : `<span class="pill ok">${e.entrada}</span>`) : '<span class="pill bad">—</span>'}</td><td>${e.saida || '—'}</td>
+  <td>${e.lat ? `<a href="https:\/\/www.google.com/maps?q=${e.lat},${e.lng}" target="_blank">mapa</a>` : esc(e.gps)} </td><td>${e.entrada ? 'Entrada: ' + ckPill(e) : ''}${e.saida ? '<br>Saída: ' + ckPill(e.saConf || {}) : ''}</td></tr>`).join('')}</table></div></div>`;
+}
+function waLink(tel, msg) { const d = digits(tel); return 'https:\/\/wa.me/' + (d.length <= 11 ? '55' + d : d) + '?text=' + encodeURIComponent(msg); }
+function msgEst(e) { return `Olá, ${e.nome.split(' ')[0]}! Aqui é o Leandro Pereira, da ${S.regional}.\n\nEste é o seu link individual do aplicativo Estágio Polícia Penal, para registrar entrada e saída (check-in com localização), comunicar ausências, ver avisos, supervisão, pagamento e documentos do estágio:\n\n${e.link}\n\nO link é pessoal e fica vinculado ao primeiro celular em que for aberto. Não repasse a ninguém. Abra no navegador (Chrome ou Safari) e, no primeiro acesso, leia o termo de ciência e autorize a localização.`; }
+function msgPes(p) { const papel = [p.nSup ? 'supervisor(a) de estágio' : '', p.nLoc ? 'responsável local' : ''].filter(Boolean).join(' e '); return `Olá, ${p.nome.split(' ')[0]}! Aqui é o Leandro Pereira, da ${S.regional}.\n\nEste é o seu link individual do aplicativo Estágio Polícia Penal, como ${papel}. Nele você acompanha a frequência dos estagiários, recebe as comunicações de ausência e os chamados${p.nSup ? ', marca a supervisão mensal e preenche o relatório mensal de supervisão' : ''}:\n\n${p.link}\n\nO link é pessoal e fica vinculado ao primeiro aparelho em que for aberto.`; }
+function regEst() {
+  const L = S.estagiarios.filter(e => !SUBTAB || e.central === SUBTAB);
+  return `<div class="card"><div class="row sp"><h2>Estagiários</h2>${centralFilter('fc')}</div><span class="mut">Envie o link pelo WhatsApp Business da regional. Para incluir estagiário novo, preencha a linha na aba Estagiarios da planilha e rode “completarCadastros”.</span>
+  <div class="tw"><table><tr><th>Nome</th><th>Central / supervisor</th><th>TCE</th><th>Ciência LGPD</th><th>Aparelho</th><th>Link</th><th></th></tr>
+  ${L.map(e => `<tr><td><div class="row" style="flex-wrap:nowrap">${e.foto ? `<img src="${e.foto}" style="width:36px;height:48px;object-fit:cover;border-radius:4px">` : ''}<div><b>${esc(e.nome)}</b><br><span class="mut">${esc(e.telefone)}</span>${e.foto ? `<br><button class="sm ghost" data-rmfoto="${e.id}">Remover foto do crachá</button>` : ''}${e.fotoPend ? `<br><span class="pill warn">Foto nova aguardando aprovação</span> <button class="sm gold" data-rfok="${e.id}">Aprovar</button>` : ''}${e.fotoTroca === 'Solicitada' ? `<br><span class="pill warn">Pediu troca de foto</span> <button class="sm gold" data-rlib="${e.id}">Liberar troca</button>` : ''}</div></div></td><td>${esc(e.central)}<br><span class="mut">${esc(e.supervisor)}</span></td><td>${esc(e.tce)}<br><span class="mut">${br(e.inicio)} a ${br(e.fim)}</span>${vigPill(e) ? '<br>' + vigPill(e) : ''}</td>
+  <td>${e.lgpdEm ? '<span class="pill ok">' + br(e.lgpdEm) + '</span>' : '<span class="pill">pendente</span>'}</td><td><span class="pill ${e.aparelho === 'Vinculado' ? 'ok' : ''}">${e.aparelho}</span>${e.aparelho === 'Vinculado' ? `<br><button class="sm ghost" data-reset="est:${e.id}">Liberar novo aparelho</button>` : ''}</td>
+  <td><a class="btn sm gold" target="_blank" href="${waLink(e.telefone, msgEst(e))}">WhatsApp</a> <button class="sm ghost" data-copy="${esc(e.link)}">Copiar</button></td>
+  <td><select data-ativo="${e.id}" style="width:90px"><option ${!/^n/i.test(e.ativo) ? 'selected' : ''}>Sim</option><option ${/^n/i.test(e.ativo) ? 'selected' : ''}>Não</option></select><span class="mut">ativo</span></td></tr>`).join('')}</table></div></div>`;
+}
+function regServ() {
+  return `<div class="card"><h2>Supervisores de estágio e responsáveis locais</h2>
+  <span class="mut">Cada servidor tem <b>um único link</b>. Quem é supervisor vê os próprios supervisionados com as ferramentas de supervisão mensal e relatório. Quem é responsável local da CPMA vê também os demais estagiários da central, só para acompanhamento. Se a pessoa é as duas coisas, as duas partes aparecem no mesmo aplicativo.</span>
+  <div class="tw"><table><tr><th>Servidor</th><th>Papel</th><th>Aparelho</th><th>Link</th></tr>
+  ${S.pessoas.map(p => `<tr><td><b>${esc(p.nome)}</b><br><span class="mut">${esc(p.central)} · ${esc(p.telefone)}</span></td>
+  <td>${p.nSup ? `<span class="pill gold">Supervisor · ${p.nSup}${p.nAmbos ? ' (também responsável local de ' + (p.nAmbos === p.nSup ? 'todos' : p.nAmbos) + ')' : ''}</span> ` : ''}${p.nLoc ? `<span class="pill">Responsável local · ${p.nLoc} de outros supervisores</span>` : ''}</td>
+  <td><span class="pill ${p.aparelho === 'Vinculado' ? 'ok' : ''}">${p.aparelho}</span>${p.aparelho === 'Vinculado' ? `<br><button class="sm ghost" data-reset="pes:${p.id}">Liberar novo aparelho</button>` : ''}</td>
+  <td>${p.telefone ? `<a class="btn sm gold" target="_blank" href="${waLink(p.telefone, msgPes(p))}">WhatsApp</a> ` : ''}<button class="sm ghost" data-copy="${esc(p.link)}">Copiar</button></td></tr>`).join('')}</table></div></div>`;
+}
+function regAvisos() {
+  return `<div class="card"><h2>Publicar aviso</h2>
+  <div class="grid2"><label class="f">Tipo<select id="avTipo"><option>Aviso</option><option>Dias excedentes do mês</option><option>Sem expediente</option><option>Polícia Penal</option><option>Material de estágio</option><option>Pagamento</option><option>Supervisão mensal marcada</option></select></label>
+  <label class="f">Para<select id="avDest"><option value="todos">Todos</option><option value="estagiarios">Todos os estagiários</option><option value="supervisores">Supervisores de estágio</option><option value="responsaveis">Responsáveis locais</option><option value="servidores">Supervisores e responsáveis</option>
+  ${S.centrais.map(c => `<option value="central:${esc(c)}">Estagiários da CPMA ${esc(c)}</option>`).join('')}${ativos().map(e => `<option value="est:${e.id}">${esc(e.nome)}</option>`).join('')}</select></label>
+  <label class="f">Mostrar até (opcional)<input type="date" id="avVal"></label></div>
+  <label class="f">Título<input id="avTit" placeholder="Ex.: Novembro tem 2 dias excedentes; Sem expediente em 20/11"></label>
+  <label class="f">Texto<textarea id="avTxt"></textarea></label><label class="f">Link (opcional: notícia da Polícia Penal, arquivo do Drive, manual)<input id="avLink" placeholder="https:\/\/"></label>
+  <button class="gold" id="avBtn">Publicar</button></div>
+  <div class="card"><h3 class="sec-h">Avisos ativos</h3><div class="list">${S.avisos.map(a => `<div class="item gold"><div class="row sp"><span class="pill gold">${esc(a.tipo)}</span><span class="mut">para ${esc(a.destino)} · ${br(a.ts)}${a.validade ? ' · até ' + br(a.validade) : ''}</span></div><b>${esc(a.titulo)}</b><span>${esc(a.texto)}</span>${a.link ? `<a href="${esc(a.link)}" target="_blank">${esc(a.link)}</a>` : ''}<button class="sm ghost" data-rmav="${a.id}">Remover</button></div>`).join('')}</div></div>`;
+}
+function regAus() {
+  return `<div class="card"><h2>Ausências, atrasos e saídas para prova</h2><div class="tw"><table><tr><th>Enviada</th><th>Estagiário</th><th>Tipo / data</th><th>Motivo</th><th>Comprovante</th><th>Ciência</th></tr>
+  ${S.comunicacoes.map(c => `<tr><td>${brts(c.ts)}</td><td>${who(c.estId, c.nome, 1)}<br><span class="mut">${esc(c.central)}</span></td><td>${esc(c.tipo)}<br>${br(c.data)} ${esc(c.hIni)}${c.hFim ? '–' + esc(c.hFim) : ''}</td><td>${esc(c.motivo)}</td>
+  <td>${c.anexoUrl ? `<a href="${esc(c.anexoUrl)}" target="_blank">abrir</a>` : ''}</td><td><span class="mut">Sup.: ${esc(c.supCiente) || '—'}<br>Local: ${esc(c.locCiente) || '—'}</span><br>${c.regCiente ? '<span class="pill ok">Regional ciente</span>' : `<button class="sm gold" data-regcc="${c.id}">Ciente</button>`}</td></tr>`).join('')}</table></div></div>`;
+}
+function regCham() { return `<div class="card"><h2>Chamados</h2><div class="list">${S.chamados.map(c => chamadoItem(c, /Regional/.test(c.para))).join('') || '<span class="mut">Nenhum chamado.</span>'}</div></div>`; }
+function regRel() {
+  return `<div class="card"><h2>Relatórios mensais de supervisão</h2><span class="mut">Fluxo: supervisor conclui e dá Ciente → estagiário se manifesta e dá Ciente → responsável local dá Ciente (quando não é o próprio supervisor) → regional dá Ciente final. O PDF com o timbrado vai para a pasta Prontuários do Drive, pronto para imprimir no prontuário físico.</span>
+  <div class="list">${S.relatorios.map(r => `<div class="item"><div class="row sp">${av(r.estId, r.estNome)}<b>${esc(r.estNome)} · ${mesNome(r.mes)}</b>${statusPill(r.status)}</div><span class="mut">${esc(r.central)}</span>
+  <div class="row"><button class="sm ghost" data-rrv="${r.id}">Ver</button>${r.status === 'Aguardando regional' ? `<button class="sm gold" data-rrc="${r.id}">Dar Ciente</button>` : ''}${r.status === 'Concluído' ? `<button class="sm ghost" data-rpdf="${r.id}">Gerar PDF</button>` : ''}${r.pdfUrl ? `<a class="btn sm gold" href="${esc(r.pdfUrl)}" target="_blank">Abrir PDF</a>` : ''}</div></div>`).join('') || '<span class="mut">Nenhum relatório.</span>'}</div></div>
+  <div class="card"><h3 class="sec-h">Supervisões marcadas</h3><div class="tw"><table><tr><th>Data</th><th>Estagiário</th><th>Estagiário ciente</th><th>Responsável local</th><th>Link</th></tr>${S.supervisoes.map(s => `<tr><td>${br(s.data)} ${esc(s.hora)}</td><td>${esc((S.estagiarios.find(e => e.id === s.estId) || {}).nome)}</td><td>${s.estCiente ? brts(s.estCiente) : '<span class="pill warn">pendente</span>'}</td><td>${s.locNA ? 'não se aplica' : s.locCiente ? esc(s.locCiente) : '<span class="pill warn">pendente</span>'}</td><td>${s.link ? `<a href="${esc(s.link)}" target="_blank">abrir</a>` : ''}</td></tr>`).join('')}</table></div></div>`;
+}
+function regPed() {
+  return `<div class="card" style="border-color:var(--bad)"><h2>TCE terminando em até 45 dias</h2><div class="tw"><table><tr><th>Estagiário</th><th>Central</th><th>Fim do TCE</th><th>Faltam</th><th>Prorrogação</th><th></th></tr>
+  ${S.alertasTce.map(a => { const e = S.estagiarios.find(x => x.id === a.id), sl = S.solicitacoes.find(x => x.estId === a.id && x.tipo === 'Prorrogação');
+    return `<tr><td>${who(a.id, a.nome, 1)}</td><td>${esc(a.central)}</td><td>${br(a.fim)}</td><td>${a.dias} dias</td><td>${sl ? esc(sl.status) : 'sem manifestação'}</td><td><a class="btn sm gold" target="_blank" href="${waLink(e.telefone, 'Olá, ' + a.nome.split(' ')[0] + '! Seu TCE termina em ' + br(a.fim) + '. Se tiver interesse em prorrogar o estágio, abra o aplicativo Estágio Polícia Penal e envie o comprovante de matrícula atualizado na tela inicial. ' + S.regional)}">Lembrar</a></td></tr>`; }).join('') || '<tr><td colspan="6" class="mut">Nenhum TCE terminando nos próximos 45 dias.</td></tr>'}</table></div></div>
+  <div class="card"><h2>Pedidos de prorrogação e recesso</h2><span class="mut">Quando todas as confirmações chegam, o pedido fica “em análise” pelo concedente. Registre aqui cada passo (solicitado ao CIEE → aditivo emitido / recesso aprovado, ou indeferido): o estagiário, o supervisor e o responsável local veem a situação do concedente e o estagiário recebe um aviso.</span>
+  <div class="list">${S.solicitacoes.map(x => solItem(x, 'reg') + regAcoes(x)).join('') || '<span class="mut">Nenhum pedido.</span>'}</div></div>`;
+}
+function regAcoes(x) {
+  const rec = x.tipo === 'Recesso';
+  const passo = x.status === 'Aguardando regional' ? (rec ? 'Recesso solicitado ao CIEE' : 'Aditivo solicitado ao CIEE')
+    : /solicitado ao CIEE/.test(x.status) ? (rec ? 'Recesso aprovado pelo CIEE' : 'Aditivo emitido pelo CIEE') : '';
+  if (!passo) return '';
+  return `<div class="row"><input data-regobs="${x.id}" placeholder="Observação (vai para o estagiário)" style="flex:1;min-width:160px"><button class="sm gold" data-regst="${x.id}|${passo}">${passo}</button><button class="sm ghost" data-regst="${x.id}|Indeferido">Indeferir</button></div>`;
+}
+function regPag() {
+  const mes = SUBTAB && /^\d{4}-\d{2}$/.test(SUBTAB) ? SUBTAB : (() => { const [y, m] = S.mesAtual.split('-').map(Number); const d = new Date(y, m - 2, 1); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0'); })();
+  const L = ativos();
+  const last = id => S.pagamentos.filter(p => p.estId === id).sort((a, b) => a.mes < b.mes ? 1 : -1);
+  return `<div class="card"><h2>Lançar pagamentos (após lançar no portal do CIEE)</h2><span class="mut">O estagiário vê os valores no aplicativo antes do 10º dia útil.</span>
+  <div class="grid2"><label class="f">Mês estagiado<input type="month" id="pgMes" value="${mes}"></label><label class="f">Data do pagamento (10º dia útil)<input type="date" id="pgData"></label></div>
+  <div class="tw"><table><tr><th>Estagiário</th><th>Bolsa (R$)</th><th>Dias</th><th>VT/dia (R$)</th><th>Total</th><th>Obs.</th><th>Recebimento</th></tr>
+  ${L.map(e => { const p = last(e.id).find(x => x.mes === mes) || last(e.id)[0] || {}; const same = p.mes === mes;
+    return `<tr data-pg="${e.id}" data-nome="${esc(e.nome)}"><td>${who(e.id, e.nome, 1)}<br><span class="mut">${esc(e.central)}</span></td><td><input data-b value="${esc(p.bolsa || '')}" style="width:100px"></td><td><input data-d value="${same ? esc(p.dias) : ''}" style="width:60px"></td><td><input data-v value="${esc(p.vtDia || '')}" style="width:80px"></td><td data-t>${same ? money(p.total) : ''}</td><td><input data-o value="${same ? esc(p.obs) : ''}" style="width:140px"></td>
+    <td>${!same ? '' : p.recebido === 'Sim' ? `<span class="pill ok">Recebido ${br(p.recebidoEm)}</span>` : p.recebido === 'Não' ? `<span class="pill bad">Não recebeu</span><br><span class="mut">${esc(p.recebidoObs)}</span>` : '<span class="pill warn">aguardando</span>'}</td></tr>`; }).join('')}</table></div>
+  <button class="gold" id="pgBtn">Salvar e publicar para os estagiários</button></div>`;
+}
+function regRec() {
+  return `<div class="card"><h2>Saldo de recesso (Lei 11.788/2008, art. 13)</h2><span class="mut">30 dias por ano de estágio, proporcional quando o TCE for menor que um ano.</span><div class="tw"><table><tr><th>Estagiário</th><th>Período aquisitivo</th><th>Direito</th><th>Gozados</th><th>Saldo</th><th>Obs.</th><th></th></tr>
+  ${ativos().map(e => { const r = S.recesso.find(x => x.estId === e.id) || {}; return `<tr data-rc="${e.id}" data-nome="${esc(e.nome)}"><td>${who(e.id, e.nome, 1)}</td><td><input data-p value="${esc(r.periodo || br(e.inicio) + ' a ' + br(e.fim))}" style="width:190px"></td><td><input data-di value="${esc(r.direito || '')}" style="width:60px"></td><td><input data-g value="${esc(r.gozados || '')}" style="width:60px"></td><td>${esc(r.saldo)}</td><td><input data-o value="${esc(r.obs || '')}" style="width:140px"></td><td><button class="sm gold" data-rcb="${e.id}">Salvar</button></td></tr>`; }).join('')}</table></div></div>`;
+}
+function regDocs() {
+  return `<div class="card"><h2>Enviar documento ao estagiário</h2>
+  <div class="grid2"><label class="f">Para<select id="rdEst"><option value="*">Todos os estagiários</option>${ativos().map(e => `<option value="${e.id}">${esc(e.nome)}</option>`).join('')}</select></label>
+  <label class="f">Tipo<select id="rdTipo"><option>TCE</option><option>Termo aditivo</option><option>Manual de estágio</option><option>Plano de atividades</option><option>Material de estágio</option><option>Outro</option></select></label>
+  <label class="f">Nome<input id="rdNome" placeholder="Ex.: TCE nº 9991411"></label></div>
+  <label class="f">Arquivo (PDF)<input type="file" id="rdArq" accept="application/pdf,image/&#42;"></label><span class="mut">ou</span><label class="f">Link já existente (Drive, site)<input id="rdLink" placeholder="https:\/\/"></label>
+  <button class="gold" id="rdBtn">Disponibilizar</button></div>
+  <div class="card"><h3 class="sec-h">Documentos</h3><div class="tw"><table><tr><th>Data</th><th>Estagiário</th><th>Tipo</th><th>Nome</th><th>Enviado por</th></tr>${S.docs.map(d => `<tr><td>${br(d.ts)}</td><td>${d.estId === '*' ? 'Todos' : esc((S.estagiarios.find(e => e.id === d.estId) || {}).nome)}</td><td>${esc(d.tipo)}</td><td><a href="${esc(d.url)}" target="_blank">${esc(d.nome)}</a></td><td>${esc(d.enviadoPor)}</td></tr>`).join('')}</table></div></div>`;
+}
+function bindReg() {
+  bindLocal(); bindSol();
+  const fc = $('#fc'); if (fc) fc.onchange = () => { SUBTAB = fc.value; render(); };
+  bindResp();
+  document.querySelectorAll('[data-copy]').forEach(b => b.onclick = () => {
+    const t = b.dataset.copy;
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => toast('Link copiado.'))
+      .catch(() => overlay(`<h3>Copie o link</h3><input value="${esc(t)}" onfocus="this.select()"><button class="ghost" onclick="closeOv()">Fechar</button>`));
+  });
+  document.querySelectorAll('[data-reset]').forEach(b => b.onclick = e => { const [k, id] = b.dataset.reset.split(':'); act(e.target, 'resetDevice', { kind: k, id }, 'Aparelho liberado. O próximo celular que abrir o link fica vinculado.'); });
+  document.querySelectorAll('[data-rlib]').forEach(b => b.onclick = e => act(e.target, 'liberarFoto', { id: b.dataset.rlib }, 'Troca liberada. O estagiário pode enviar uma nova foto.'));
+  document.querySelectorAll('[data-rfok]').forEach(b => b.onclick = e => act(e.target, 'aprovarFoto', { id: b.dataset.rfok, aprovar: true }, 'Foto aprovada.'));
+  document.querySelectorAll('[data-rmfoto]').forEach(b => b.onclick = e => act(e.target, 'removerFoto', { id: b.dataset.rmfoto }, 'Foto removida. O estagiário pode enviar outra.'));
+    document.querySelectorAll('[data-ativo]').forEach(s => s.onchange = () => act(null, 'ativo', { id: s.dataset.ativo, ativo: s.value }, 'Situação atualizada.'));
+  const av = $('#avBtn'); if (av) av.onclick = e => { if (!$('#avTit').value.trim()) return toast('Informe o título.');
+    act(e.target, 'aviso', { tipo: $('#avTipo').value, destino: $('#avDest').value, validade: $('#avVal').value, titulo: $('#avTit').value.trim(), texto: $('#avTxt').value.trim(), link: $('#avLink').value.trim() }, 'Aviso publicado.'); };
+  document.querySelectorAll('[data-rmav]').forEach(b => b.onclick = e => act(e.target, 'removerAviso', { id: b.dataset.rmav }, 'Aviso removido.'));
+  document.querySelectorAll('[data-regcc]').forEach(b => b.onclick = e => act(e.target, 'cienteComunicacao', { id: b.dataset.regcc }, 'Ciência registrada.'));
+  document.querySelectorAll('[data-rrv]').forEach(b => b.onclick = () => overlay(relHtml(S.relatorios.find(r => r.id === b.dataset.rrv)) + '<button class="ghost" onclick="closeOv()">Fechar</button>'));
+  document.querySelectorAll('[data-rrc]').forEach(b => b.onclick = () => {
+    const r = S.relatorios.find(x => x.id === b.dataset.rrc);
+    const o = overlay(relHtml(r) + `<div class="card" style="border-color:var(--ouro)"><b>Ciência da regional</b><label class="f">Local<input id="rgLoc" value="São Paulo"></label><button class="gold big" id="rgOk">Ciente – gerar PDF para o prontuário</button></div><button class="ghost" onclick="closeOv()">Fechar</button>`);
+    o.querySelector('#rgOk').onclick = async e => { e.target.disabled = true; e.target.textContent = 'Gerando PDF…';
+      try { const x = await call('cienteRelatorio', { id: r.id, local: o.querySelector('#rgLoc').value.trim() }); closeOv(); await reload(); overlay(`<h2>Ciência registrada</h2><a class="btn gold big" href="${x.pdfUrl}" target="_blank">Abrir PDF para imprimir</a><button class="ghost" onclick="closeOv()">Fechar</button>`); }
+      catch (err) { toast('Erro: ' + err.message); e.target.disabled = false; } };
+  });
+  document.querySelectorAll('[data-rpdf]').forEach(b => b.onclick = async () => { b.textContent = 'Gerando…'; try { const x = await call('pdf', { id: b.dataset.rpdf }); await reload(); overlay(`<a class="btn gold big" href="${x.pdfUrl}" target="_blank">Abrir PDF</a><button class="ghost" onclick="closeOv()">Fechar</button>`); } catch (e) { toast(e.message); } });
+  document.querySelectorAll('[data-regst]').forEach(b => b.onclick = e => { const [id, st] = b.dataset.regst.split('|');
+    act(e.target, 'solicitacao', { id, status: st, obs: (document.querySelector(`[data-regobs="${id}"]`) || {}).value || '' }, 'Pedido atualizado.'); });
+  const pgm = $('#pgMes'); if (pgm) pgm.onchange = () => { SUBTAB = pgm.value; render(); };
+  document.querySelectorAll('[data-pg]').forEach(tr => tr.oninput = () => { const n = s => Number(String(s).replace(',', '.')) || 0;
+    const b = n(tr.querySelector('[data-b]').value), d = n(tr.querySelector('[data-d]').value), v = n(tr.querySelector('[data-v]').value); tr.querySelector('[data-t]').textContent = money(b + d * v); });
+  const pb = $('#pgBtn'); if (pb) pb.onclick = e => {
+    if (!$('#pgData').value) return toast('Informe a data do pagamento.');
+    const n = s => Number(String(s).replace(',', '.')) || 0;
+    const linhas = [...document.querySelectorAll('[data-pg]')].filter(tr => tr.querySelector('[data-b]').value && tr.querySelector('[data-d]').value).map(tr => {
+      const b = n(tr.querySelector('[data-b]').value), d = n(tr.querySelector('[data-d]').value), v = n(tr.querySelector('[data-v]').value);
+      return { estId: tr.dataset.pg, nome: tr.dataset.nome, bolsa: b, dias: d, vtDia: v, vt: +(d * v).toFixed(2), total: +(b + d * v).toFixed(2), obs: tr.querySelector('[data-o]').value };
+    });
+    if (!linhas.length) return toast('Preencha bolsa e dias de ao menos um estagiário.');
+    act(e.target, 'pagamentos', { mes: $('#pgMes').value, dataPagto: $('#pgData').value, linhas }, linhas.length + ' pagamento(s) publicados.');
+  };
+  document.querySelectorAll('[data-rcb]').forEach(b => b.onclick = e => { const tr = document.querySelector(`[data-rc="${b.dataset.rcb}"]`);
+    act(e.target, 'recesso', { estId: b.dataset.rcb, nome: tr.dataset.nome, periodo: tr.querySelector('[data-p]').value, direito: tr.querySelector('[data-di]').value, gozados: tr.querySelector('[data-g]').value, obs: tr.querySelector('[data-o]').value }, 'Recesso salvo.'); });
+  const rd = $('#rdBtn'); if (rd) rd.onclick = async e => {
+    const est = $('#rdEst').value, nome = $('#rdNome').value.trim() || $('#rdTipo').value, estNome = est === '*' ? 'Todos' : (S.estagiarios.find(x => x.id === est) || {}).nome;
+    if ($('#rdLink').value.trim()) return act(e.target, 'documentoLink', { estId: est, tipo: $('#rdTipo').value, nome, url: $('#rdLink').value.trim() }, 'Documento disponibilizado.');
+    let a; try { a = await fileToB64($('#rdArq').files[0]); } catch (x) { return toast(x.message); }
+    act(e.target, 'documento', { estId: est, estNome, tipo: $('#rdTipo').value, nome, b64: a.b64, mime: a.mime }, 'Documento disponibilizado.');
+  };
+}
+
+/* ============================== INÍCIO ============================== */
+(function start() {
+  if (!TOKEN) { $('#app').innerHTML = '<div class="card"><h2>Link incompleto</h2><p class="mut">Abra o link individual que você recebeu pelo WhatsApp da SRPMA Metropolitana de São Paulo.</p></div>'; return; }
+  call('boot').then(d => { S = d; render(); }).catch(e => {
+    const m = e.message;
+    const t = m === 'DEVICE' ? ['Link já ativado em outro aparelho', 'Este link individual está vinculado ao primeiro celular em que foi aberto. Se você trocou de aparelho ou limpou os dados do navegador, peça à SRPMA Metropolitana de São Paulo para liberar o novo aparelho (WhatsApp (11) 91785-7353).']
+      : m === 'INATIVO' ? ['Acesso encerrado', 'Este estágio não está mais ativo no aplicativo.']
+      : m === 'TOKEN' ? ['Link inválido', 'Confira se abriu o link completo enviado pelo WhatsApp da SRPMA Metropolitana de São Paulo.']
+      : ['Não foi possível carregar', m];
+    $('#app').innerHTML = `<div class="card"><h2>${t[0]}</h2><p class="mut">${esc(t[1])}</p></div>`;
+  });
+})();
+</script>
+</body>
+</html>
