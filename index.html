@@ -309,7 +309,8 @@ function estCracha() {
   ${!S.est.fotoPend && /Recusada|Removida/.test(S.est.fotoStatus) ? `<div class="card" style="border-color:var(--bad)"><span class="pill bad">Foto ${S.est.fotoStatus === 'Recusada' ? 'recusada' : 'removida'}</span><span>${esc(S.est.fotoObs)}</span><span class="mut">Envie outra foto.</span></div>` : ''}
   ${podeFoto() ? `<div class="card"><b>${S.est.foto ? 'Envie a nova foto do crachá (troca liberada pela regional)' : 'Coloque sua foto no crachá'}</b>
     <span class="mut">Atenção: a foto é enviada <b>uma única vez</b>. Use foto de rosto, de frente, fundo claro, sem óculos escuros nem boné (padrão 3×4). A foto é recortada automaticamente e só vale no crachá depois de aprovada pelo responsável local da CPMA. Depois, a troca só é possível com solicitação à regional.</span>
-    <label class="btn gold">Escolher ou tirar foto<input type="file" id="crFoto" accept="image/&#42;" hidden></label></div>`
+    <div class="row"><label class="btn gold">📷 Tirar selfie<input type="file" class="crFoto" accept="image/&#42;" capture="user" hidden></label><label class="btn ghost">Escolher da galeria<input type="file" class="crFoto" accept="image/&#42;" hidden></label></div>
+    <span class="mut">Dica para a selfie: segure o celular na altura dos olhos, de frente para uma parede clara e com boa luz. Antes de enviar, você confere a foto.</span></div>`
   : S.est.foto && !S.est.fotoPend ? (S.est.fotoTroca === 'Solicitada' ? `<div class="card"><span class="pill warn">Troca de foto solicitada – aguardando liberação da regional</span></div>`
     : `<div class="card"><b>Precisa trocar a foto?</b><span class="mut">A troca só é feita com solicitação à regional.</span><input id="crMot" placeholder="Motivo da troca"><button class="ghost" id="crPed">Solicitar troca de foto</button></div>`) : ''}
   <button class="big" id="crFull">Mostrar crachá em tela cheia</button>`;
@@ -447,7 +448,10 @@ function bindEst() {
     if (b.dataset.pgno && !obs.trim()) return toast('Explique o que aconteceu.');
     act(e.target, 'pagamento', { id, recebido: !!b.dataset.pgok, obs: obs.trim() }, b.dataset.pgok ? 'Recebimento confirmado.' : 'Informação enviada à regional.');
   });
-  const cf = $('#crFoto'); if (cf) cf.onchange = async ev => { try { const f = await foto3x4(ev.target.files[0]); await act(null, 'foto', { foto: f }, 'Foto enviada para aprovação do responsável local.'); } catch (x) { toast(x.message); } };
+  document.querySelectorAll('.crFoto').forEach(cf => cf.onchange = async ev => { try { const f = await foto3x4(ev.target.files[0]); ev.target.value = '';
+    const o = overlay(`<h2>Conferir a foto</h2><div class="center"><img src="${f}" style="width:150px;height:200px;object-fit:cover;border-radius:8px;border:2px solid var(--ouro)"></div><p class="mut">A foto é enviada uma única vez. Confira: rosto de frente, fundo claro, sem óculos escuros nem boné.</p><button class="gold big" id="fSend">Enviar esta foto</button><button class="ghost" onclick="closeOv()">Tirar ou escolher outra</button>`);
+    o.querySelector('#fSend').onclick = async e => { if (await act(e.target, 'foto', { foto: f }, 'Foto enviada para aprovação do responsável local.')) closeOv(); };
+  } catch (x) { toast(x.message); } });
   const cp = $('#crPed'); if (cp) cp.onclick = e => { if (!$('#crMot').value.trim()) return toast('Informe o motivo.'); act(e.target, 'pedirTrocaFoto', { motivo: $('#crMot').value.trim() }, 'Solicitação enviada à regional.'); };
   const cd = $('#crDados'); if (cd) cd.onclick = e => act(e.target, 'dados', { rg: $('#crRg').value, cpf: $('#crCpf').value }, 'Dados salvos.');
   const cfull = $('#crFull'); if (cfull) cfull.onclick = () => {
