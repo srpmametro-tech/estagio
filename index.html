@@ -967,7 +967,8 @@ function bindReg() {
       : m === 'INATIVO' ? ['Acesso encerrado', 'Este estágio não está mais ativo no aplicativo.']
       : m === 'TOKEN' ? ['Link inválido', 'Confira se abriu o link completo enviado pelo WhatsApp da SRPMA Metropolitana de São Paulo.']
       : ['Não foi possível carregar', m];
-    $('#app').innerHTML = `<div class="card"><h2>${t[0]}</h2><p class="mut">${esc(t[1])}</p></div>`;
+    $('#app').innerHTML = `<div class="card"><h2>${t[0]}</h2><p class="mut">${esc(t[1])}</p>${m === 'DEVICE' ? `<div class="item" style="border-color:var(--ouro)"><b>Este é o seu celular?</b><span class="mut">Se você abriu o link antes por outro navegador (por exemplo, pelo WhatsApp e agora pelo Chrome ou Safari), pode passar a usar o aplicativo aqui. O link deixa de funcionar no navegador anterior e a regional é avisada.</span><button class="gold big" id="devBtn">Usar neste aparelho</button></div>` : ''}</div>`;
+  const db = $('#devBtn'); if (db) db.onclick = async () => { db.disabled = true; db.textContent = 'Transferindo…'; try { await call('trocarAparelho', { confirmo: true }); location.reload(); } catch (x) { db.disabled = false; db.textContent = 'Usar neste aparelho'; toast('Erro: ' + x.message); } };
   });
 })();
 </script>
