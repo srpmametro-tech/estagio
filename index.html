@@ -618,7 +618,7 @@ function pesHoje() {
   const fotos = S.equipe.filter(e => e.fotoPend);
   const ckp = S.checkinsPend || [];
   return (ckp.length ? `<div class="card" style="border-color:var(--ouro)"><div class="row sp"><h2>Check-in e check-out para confirmar</h2><button class="sm gold" data-ckall="1">Confirmar todos (${ckp.length})</button></div>
-    <span class="mut">Como responsável local, só você confirma o check-in (entrada) e o check-out (saída), até o dia seguinte ao registro: confirme que o estagiário estava na CPMA no horário registrado. Se não estava, marque “Não confirmar” e explique.</span>
+    <span class="mut">Como responsável local, só você confirma o check-in (entrada) e o check-out (saída), até o próximo dia útil após o registro: confirme que o estagiário estava na CPMA no horário registrado. Se não estava, marque “Não confirmar” e explique.</span>
     <div class="list">${ckp.map(c => `<div class="item"><div class="row sp">${who(c.estId, c.nome)}<span class="mut">${brts(c.ts)}</span></div>
       <div class="row"><span class="pill">${esc(c.tipo)}</span>${+c.atraso > 0 ? `<span class="pill warn">${c.atraso} min de atraso</span>` : ''}${c.lat ? `<a href="https:\/\/www.google.com/maps?q=${c.lat},${c.lng}" target="_blank">ver no mapa</a>` : `<span class="pill bad">sem localização</span>`}</div>
       <input data-ckobs="${c.id}" placeholder="Motivo, se não confirmar"><div class="row"><button class="sm gold" data-ckok="${c.id}">Confirmar</button><button class="sm ghost" data-ckno="${c.id}">Não confirmar</button></div></div>`).join('')}</div></div>` : '') + (fotos.length ? `<div class="card" style="border-color:var(--ouro)"><h2>Fotos do crachá para aprovar</h2><span class="mut">Confira se é o próprio estagiário, de rosto, de frente, fundo claro e sem óculos escuros nem boné. Como responsável local, a foto só entra no crachá depois da sua aprovação.</span>
@@ -795,7 +795,7 @@ function regLocal() {
   if (!(L.estagiarios || []).length) return '';
   const n = (L.checkinsPend || []).length + (L.supervisoes || []).length + (L.relatorios || []).length + (L.solicitacoes || []).length;
   return `<div class="card" style="border-color:var(--ouro)"><div class="row sp"><h2>Você como responsável local</h2>${L.checkinsPend.length ? `<button class="sm gold" data-ckall="1">Confirmar todos (${L.checkinsPend.length})</button>` : ''}</div>
-    <span class="mut">Estagiários lotados na Diretoria Regional: ${L.estagiarios.map(e => esc(e.nome)).join(', ')}. Confirme o check-in e o check-out até o dia seguinte ao registro.</span>
+    <span class="mut">Estagiários lotados na Diretoria Regional: ${L.estagiarios.map(e => esc(e.nome)).join(', ')}. Confirme o check-in e o check-out até o próximo dia útil após o registro.</span>
     ${n ? '' : '<span class="pill ok">Nada pendente</span>'}
     <div class="list">${L.checkinsPend.map(c => `<div class="item"><div class="row sp">${who(c.estId, c.nome)}<span class="mut">${brts(c.ts)}</span></div>
       <div class="row"><span class="pill">${esc(c.tipo)}</span>${+c.atraso > 0 ? `<span class="pill warn">${c.atraso} min de atraso</span>` : ''}${c.lat ? `<a href="https:\/\/www.google.com/maps?q=${c.lat},${c.lng}" target="_blank">ver no mapa</a>` : `<span class="pill bad">sem localização</span>`}</div>
